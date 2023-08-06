@@ -1,0 +1,112 @@
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+unpacking sources
+unpacking source archive /nix/store/axxsn99fxhw2x6ncbdlkjvk0my1cnlwx-source
+source root is source
+@nix { "action": "setPhase", "phase": "patchPhase" }
+patching sources
+applying patch /nix/store/61igdhlji1ic3vz5lsgj8f8wa9icvfsr-089ef94ac04629f7380f5e618443bcacb2cef5ab.patch
+patching file VERSION
+patching file app/lpktgenlib.c
+patching file app/pktgen-cmds.c
+patching file app/pktgen-constants.h
+patching file app/pktgen-latency.c
+patching file app/pktgen-latency.h
+patching file app/pktgen-port-cfg.c
+patching file app/pktgen-port-cfg.h
+patching file app/pktgen-rate.c
+patching file app/pktgen-stats.c
+patching file app/pktgen.c
+patching file app/pktgen.h
+patching file lib/common/pg_strings.h
+patching file lib/common/utils.h
+patching file lib/lua/lua_dpdk.c
+patching file lib/lua/lua_dpdk.h
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+configuring
+meson flags: --buildtype=plain         --libdir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/lib --libexecdir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/libexec         --bindir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/bin --sbindir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/sbin         --includedir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/include         --mandir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/share/man --infodir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/share/info         --localedir=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/share/locale         -Dauto_features=enabled         -Dwrap_mode=nodownload         --prefix=/nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1  
+[1mThe Meson build system[0m
+Version: 1.1.1
+Source dir: [1m/build/source[0m
+Build dir: [1m/build/source/build[0m
+Build type: [1mnative build[0m
+Program [1mcat[0m found: [1;32mYES[0m (/nix/store/ljc5c4fiw1x9zk7q4nvdjb6ylnvic1yy-coreutils-9.3/bin/cat)
+[1;33mWARNING:[0m You should add the boolean check kwarg to the run_command call.
+         It currently defaults to false,
+         but it will default to true in future releases of meson.
+         See also: https://github.com/mesonbuild/meson/issues/9300
+Project name: [1mpktgen[0m
+Project version: [1m22.07.1[0m
+C compiler for the host machine: [1mgcc[0m (gcc 12.3.0 "gcc (GCC) 12.3.0")
+C linker for the host machine: [1mgcc[0m ld.bfd 2.40
+Host machine cpu family: [1maarch64[0m
+Host machine cpu: [1maarch64[0m
+Compiler for C supports arguments -mavx: [1;31mNO[0m 
+Compiler for C supports arguments -mavx2: [1;31mNO[0m 
+Compiler for C supports arguments -Wno-pedantic: [1;32mYES[0m 
+Compiler for C supports arguments -Wno-format-truncation: [1;32mYES[0m 
+Found pkg-config: [1m/nix/store/10y2rcpc7nb7yigaknbnp7k6wfjwc7vx-pkg-config-wrapper-0.29.2/bin/pkg-config[0m (0.29.2)
+Run-time dependency [1mlibdpdk[0m found: [1;32mYES[0m [36m22.11.1[0m
+Library [1mlibrte_net_bond[0m found: [1;31mNO[0m
+Program python3 found: [1;32mYES[0m (/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3.10)
+Library [1mrte_net_i40e[0m found: [1;31mNO[0m
+Library [1mrte_net_ixgbe[0m found: [1;31mNO[0m
+Library [1mrte_net_ice[0m found: [1;31mNO[0m
+Library [1mrte_bus_vdev[0m found: [1;31mNO[0m
+Run-time dependency [1mthreads[0m found: [1;32mYES[0m
+Library [1mnuma[0m found: [1;32mYES[0m
+Library [1mpcap[0m found: [1;32mYES[0m
+Library [1mdl[0m found: [1;32mYES[0m
+Library [1mm[0m found: [1;32mYES[0m
+Program [1msphinx-build[0m found: [1;31mNO[0m
+Build targets in project: [1m9[0m
+
+pktgen [36m22.07.1[0m
+
+  [1mUser defined options[0m
+    auto_features: enabled
+    bindir       : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/bin
+    buildtype    : plain
+    includedir   : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/include
+    infodir      : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/share/info
+    libdir       : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/lib
+    libexecdir   : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/libexec
+    localedir    : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/share/locale
+    mandir       : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/share/man
+    prefix       : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1
+    sbindir      : /nix/store/8p9crvldgiiymwaplqbfmqajv9ky4h7g-pktgen-22.07.1/sbin
+    wrap_mode    : nodownload
+
+Found ninja-1.11.1 at /nix/store/bxrygm9i9z1xq3am53sdxfpq98dk2ndf-ninja-1.11.1/bin/ninja
+meson: enabled parallel building
+meson: enabled parallel installing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+building
+build flags: -j4
+[1/69] Compiling C object lib/common/libcommon.a.p/copyright_info.c.o
+[2/69] Compiling C object lib/common/libcommon.a.p/cmdline_parse_args.c.o
+[3/69] Compiling C object lib/common/libcommon.a.p/core_info.c.o
+[4/69] Compiling C object lib/common/libcommon.a.p/port_config.c.o
+[5/69] Compiling C object lib/common/libcommon.a.p/utils.c.o
+[6/69] Compiling C object lib/common/libcommon.a.p/lscpu.c.o
+[7/69] Compiling C object lib/common/libcommon.a.p/coremap.c.o
+[8/69] Compiling C object lib/common/libcommon.a.p/pg_strings.c.o
+FAILED: lib/common/libcommon.a.p/pg_strings.c.o 
+gcc -Ilib/common/libcommon.a.p -Ilib/common -I../lib/common -I/nix/store/ac1ypxf01yj9m91qzhpnx8cab8aihg1g-dpdk-22.11.1/include -I/nix/store/jfnlzc0spcrkfpxkg64vy3g41sgc5d0k-libbsd-unstable-2023-04-29-dev/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -Werror -march=native -DALLOW_EXPERIMENTAL_API -D_GNU_SOURCE -Wno-pedantic -Wno-format-truncation -fPIC -include rte_config.h -march=armv8-a+crc -moutline-atomics -MD -MQ lib/common/libcommon.a.p/pg_strings.c.o -MF lib/common/libcommon.a.p/pg_strings.c.o.d -o lib/common/libcommon.a.p/pg_strings.c.o -c ../lib/common/pg_strings.c
+In file included from ../lib/common/pg_strings.c:5:
+../lib/common/pg_strings.h: In function 'pg_ether_aton':
+../lib/common/pg_strings.h:178:17: error: implicit declaration of function 'strtoul'; did you mean 'strtok'? [-Werror=implicit-function-declaration]
+  178 |         o[i]  = strtoul(a, &end, 16);
+      |                 ^~~~~~~
+      |                 strtok
+../lib/common/pg_strings.c: In function 'pg_stropt':
+../lib/common/pg_strings.c:152:15: error: implicit declaration of function 'alloca' [-Werror=implicit-function-declaration]
+  152 |         buf = alloca(n);
+      |               ^~~~~~
+../lib/common/pg_strings.c:152:15: error: incompatible implicit declaration of built-in function 'alloca' [-Werror=builtin-declaration-mismatch]
+cc1: all warnings being treated as errors
+[9/69] Compiling C object lib/common/libcommon.a.p/l2p.c.o
+[10/69] Compiling C object lib/common/libcommon.a.p/pg_pcap.c.o
+[11/69] Compiling C object lib/common/libcommon.a.p/cksum.c.o
+ninja: build stopped: subcommand failed.

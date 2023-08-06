@@ -1,0 +1,929 @@
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+unpacking sources
+unpacking source archive /nix/store/v3c2il5vf5jzfx565qdpmn3i0g3jzc0q-ceph-17.2.5.tar.gz
+source root is ceph-17.2.5
+setting SOURCE_DATE_EPOCH to timestamp 1666037519 of file ceph-17.2.5/src/pybind/mgr/rook/rook_client/_helper.py
+@nix { "action": "setPhase", "phase": "patchPhase" }
+patching sources
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+updateAutotoolsGnuConfigScriptsPhase
+Updating Autotools / GNU config script to a newer upstream version: ./src/erasure-code/jerasure/jerasure/config.sub
+Updating Autotools / GNU config script to a newer upstream version: ./src/erasure-code/jerasure/jerasure/config.guess
+@nix { "action": "setPhase", "phase": "configurePhase" }
+configuring
+patching script interpreter paths in src/script src/spdk src/test src/tools
+src/script/backport-create-issue: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/script/ptl-tool.py: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/script/kcon_all.sh: interpreter directive changed from "#!/bin/sh -x" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -x"
+src/script/check_commands.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/script/run-make.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/backport-resolve-issue: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/script/gen-corpus.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/cpatch: interpreter directive changed from "#!/bin/bash -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash -e"
+src/script/kubejacker/kubejacker.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/run_tox.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/run_uml.sh: interpreter directive changed from "#!/bin/bash -norc" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash -norc"
+src/script/ceph-debug-docker.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/ceph-release-notes: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/script/run-cbt.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/script/smr_benchmark/linearCopy.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/smr_benchmark/linearSMRCopy.sh: interpreter directive changed from "#! /usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/crash_bdev.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/credits.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/set_up_stretch_mode.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/add_osd.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/ceph-backport.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/run-coverity: interpreter directive changed from "#!/bin/sh -ex" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -ex"
+src/script/extend_stretch_cluster.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/build-integration-branch: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/script/strip_trailing_whitespace.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/script/find_dups_in_pg_log.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/script/run_mypy.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/script/kcon_most.sh: interpreter directive changed from "#!/bin/sh -x" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -x"
+src/spdk/test/pmem/pmem.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/openstack/run_openstack_tests.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/openstack/install_devstack.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vmd/vmd.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/fuzz/autofuzz.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/fuzz/autofuzz_nvmf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/fuzz/autofuzz_vhost.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/fuzz/autofuzz_iscsi.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/blobstore/blobstore.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/blobstore/blob_io_wait/blob_io_wait.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/env/env.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/make/check_so_deps.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/management/create-destruct.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/management/persistent-metadata.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/management/multicore.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/management/remove.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/ocf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/integrity/stats.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/integrity/fio-modes.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ocf/integrity/bdevperf-iotypes.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/rpc/rpc.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/common/config/vm_setup.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/common/autotest_common.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/json_config/config_filter.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/json_config/alias_rpc/alias_rpc.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/json_config/json_diff.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/json_config/json_config.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/json_config/clear_config.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/nvme/nvme_rpc.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/hw_hotplug.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/nvme_opal.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/spdk_nvme_cli.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/hotplug.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/nvme.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/cuse/nvme_cuse.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/cuse/spdk_nvme_cli_cuse.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/cuse/spdk_smartctl_cuse.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/cuse/nvme_ns_manage_cuse.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/cuse/nvme_cuse_rpc.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/perf/run_perf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvme/perf/common.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/sock/sock.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/pmem/iscsi_pmem.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/calsoft/calsoft.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/iscsi_tgt/calsoft/calsoft.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/rpc_config/rpc_config.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/rpc_config/rpc_config.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/iscsi_tgt/fuzz/fuzz.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/trace_record/trace_record.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/rbd/rbd.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/ext4test/ext4test.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/ip_migration/ip_migration.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/initiator/initiator.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/bdev_io_wait/bdev_io_wait.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/nvme_remote/fio_remote_nvme.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/lvol/iscsi_lvol.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/fio/fio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/reset/reset.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/filesystem/filesystem.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/qos/qos.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/multiconnection/multiconnection.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/perf/iscsi_initiator.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/perf/iscsi_target.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/iscsi_tgt.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/iscsi_tgt/digests/digests.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/app/fuzz/common/fuzz_rpc.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/dpdk_memory_utility/test_dpdk_mem_info.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/hotremove.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/snapshot_clone.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/lvol2.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/tasting.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/thin_provisioning.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/resize.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/rename.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/lvol/basic.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/blobfs/blobfs.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/blobfs/rocksdb/rocksdb.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/blobfs/rocksdb/postprocess.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/nvmf/host/identify.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/host/target_disconnect.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/host/identify_kernel_nvmf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/host/aer.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/host/fio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/host/perf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/host/bdevperf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/nvmf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/srq_overwhelm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/multitarget_rpc.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/nvmf/target/fuzz.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/nmic.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/nvme_cli.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/identify_passthru.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/bdev_io_wait.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/rpc.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/create_transport.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/nvmf_vhost.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/abort.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/nvmf_lvol.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/shutdown.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/multitarget.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/invalid.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/fio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/multiconnection.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/initiator_timeout.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/bdevio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/filesystem.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/nvmf_example.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/connect_disconnect.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/nvmf/target/discovery.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/fuzz/fuzz.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/vhost.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/readonly/readonly.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/readonly/disabled_readonly_vm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/readonly/enabled_readonly_vm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/readonly/delete_partition_vm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/vhost_boot/vhost_boot.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/initiator/blockdev.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/integrity/integrity_start.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/integrity/integrity_vm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/lvol/lvol_test.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/fio/fio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/perf_bench/vhost_perf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/manual.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/hotplug/scsi_hotdetach.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/hotplug/scsi_hotplug.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/hotplug/scsi_hotattach.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/fiotest/fio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/other/negative.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/shared/shared.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/windows/windows_scsi_compliance.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/vhost/windows/windows_scsi_compliance.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/windows/windows.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/vhost/migration/migration.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/compress/compress.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/bdev/bdev_raid.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/bdev/bdevperf/bdevperf.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/bdev/bdevperf/test_config.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/bdev/bdevio/tests.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/bdev/blockdev.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/vhost.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/rbd.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/spdkcli_job.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/test/spdkcli/virtio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/raid.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/nvmf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/iscsi.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/pmem.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/spdkcli/tcp.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/external_code/test_make.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ftl/ftl.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ftl/restore.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ftl/dirty_shutdown.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ftl/fio.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ftl/json.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ftl/bdevperf.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/unit/unittest.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/ioat/ioat.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/dd/posix.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/dd/basic_rw.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/dd/dd.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/dd/bdev_to_bdev.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/rpc_client/rpc_client.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/config_converter/test_converter.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/test/event/event.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/autopackage.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/autobuild.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/ocf/tests/functional/utils/configure_random.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/ocf/tests/unit/framework/run_unit_tests.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/ocf/tests/unit/framework/prepare_sources_for_testing.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/ocf/tests/unit/framework/add_new_test_file.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/ocf/tests/unit/tests/add_new_test_file.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/autorun.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/intel-ipsec-mb/LibPerfApp/ipsec_diff_tool.py: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/autotest.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/autorun_post.py: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/doc/api/doxy-html-custom.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/doc/api/generate_doxygen.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/doc/api/generate_examples.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/usertools/dpdk-pmdinfo.py: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/usertools/dpdk-setup.sh: interpreter directive changed from "#! /bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/dpdk/usertools/dpdk-telemetry.py: interpreter directive changed from "#! /usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/usertools/cpu_layout.py: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/usertools/dpdk-devbind.py: interpreter directive changed from "#! /usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/usertools/dpdk-telemetry-client.py: interpreter directive changed from "#! /usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/buildtools/gen-build-mk.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/check-symbols.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/gen-config-h.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/auto-config-h.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/call-sphinx-build.py: interpreter directive changed from "#! /usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/buildtools/list-dir-globs.py: interpreter directive changed from "#! /usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/buildtools/relpath.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/gen-pmdinfo-cfile.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/options-ibverbs-static.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/buildtools/map-list-symbol.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/app/test/get-coremask.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/app/test/has-hugepage.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/app/test-bbdev/test-bbdev.py: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/app/test-cmdline/cmdline_test.py: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/config/arm/armv8_machine.py: interpreter directive changed from "#!/usr/bin/python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/devtools/cocci.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/check-maintainers.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/check-symbol-change.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/test-null.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/check-git-log.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/build-tags.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/test-meson-builds.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/check-includes.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/update_version_map_abi.py: interpreter directive changed from "#!/usr/bin/env python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/spdk/dpdk/devtools/checkpatches.sh: interpreter directive changed from "#! /bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/update-abi.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/check-abi-version.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/check-symbol-maps.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/check-dup-includes.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/test-build.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/gen-abi.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/check-abi.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/devtools/get-maintainer.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/dpdk/devtools/git-log-fixes.sh: interpreter directive changed from "#! /bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/dpdk/examples/performance-thread/l3fwd-thread/test.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/dpdk/examples/ipsec-secgw/test/run_test.sh: interpreter directive changed from "#! /bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/dpdk/examples/ipsec-secgw/test/pkttest.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/dpdk/examples/ipsec-secgw/test/pkttest.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/examples/ipsec-secgw/test/trs_ipv6opts.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/examples/ipsec-secgw/test/tun_null_header_reconstruct.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/dpdk/.ci/linux-build.sh: interpreter directive changed from "#!/bin/sh -xe" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -xe"
+src/spdk/dpdk/.ci/linux-setup.sh: interpreter directive changed from "#!/bin/sh -xe" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -xe"
+src/spdk/scripts/rpc.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/ceph/start.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/ceph/stop.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/rxe_cfg_small.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/check_format.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/histogram.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/detect_cc.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/fio.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/pkgdep.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/genconfig.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/setup.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/prep_benchmarks.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/spdkcli.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/eofnl: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/gen_ftl.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/vagrant/create_openstack_vm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/vagrant/create_nvme_img.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/vagrant/create_vhost_vm.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/vagrant/create_vbox.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/vagrant/run-autorun.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/vagrant/update.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/rpc_http_proxy.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/iostat.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/pkgdep/rhel.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/pkgdep/debian.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/pkgdep/sles.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/pkgdep/clear-linux-os.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/pkgdep/freebsd.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/pkgdep/arch.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/gen_nvme.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/config_converter.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/perf/nvme/run_fio_test.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/perf/nvme/run_fio_test.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/perf/nvmf/run_nvmf.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/scripts/qat_setup.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/scripts/dpdk_mem_info.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/spdk/isa-l/programs/igzip_cli_check.sh: interpreter directive changed from "#! /bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/isa-l/autogen.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/spdk/isa-l/tools/remove_trailing_whitespace.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/isa-l/tools/check_format.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/isa-l/tools/test_autorun.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/isa-l/tools/iindent: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/isa-l/tools/test_extended.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/isa-l/tools/test_fuzz.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/isa-l/tools/test_checks.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/isa-l/tools/test_tools.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/spdk/.githooks/pre-commit: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/.githooks/pre-push: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/spdk/configure: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_common.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/rbd-ggate.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_missing_unfound.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/mon/bench_auth.py: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/test/docker-test.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_crush_bucket.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/run-cli-tests-maybe-unset-ccache: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/test_unfound.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/run-rbd-tests: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/crimson/cbt/t2c.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/test/test_pidfile.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/coverage.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/encoding/identity.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/test/encoding/import.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/test/encoding/readable.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/encoding/import-generated.sh: interpreter directive changed from "#!/bin/sh -e" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -e"
+src/test/encoding/generate-corpus-objects.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/encoding/check-generated.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/memuse/test_written_pool_memuse_tcmalloc.sh: interpreter directive changed from "#!/bin/sh -x" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -x"
+src/test/memuse/test_pool_memuse.sh: interpreter directive changed from "#! /bin/sh -x" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -x"
+src/test/memuse/test_written_pool_memuse.sh: interpreter directive changed from "#! /bin/sh -x" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -x"
+src/test/memuse/test_pool_memuse_tcmalloc.sh: interpreter directive changed from "#! /bin/sh -x" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -x"
+src/test/run-rbd-unit-tests.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_backfill.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/test_split.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/objectstore/run_seed_to.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/objectstore/run_test_deferred.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/objectstore/run_seed_to_range.sh: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/run-rbd-valgrind-unit-tests.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/run-cli-tests: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/crush/crush_weights.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/ceph-erasure-code-tool/test_ceph-erasure-code-tool.sh: interpreter directive changed from "#!/bin/sh -ex" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -ex"
+src/test/admin_socket/objecter_requests: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/test/system/rerun.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/pybind/test_ceph_daemon.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/test/pybind/test_ceph_argparse.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/test/rgw/test-rgw-meta-sync.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/rgw/test-rgw-multisite.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/rgw/test-ceph-diff-sorted.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/rgw/bucket_notification/bootstrap: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/test/rgw/test-rgw-call.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_lost.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/mgr/mgr-dashboard-smoke.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_pools.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/librbd/test_notify.py: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/test/smoke.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_objectstore_memstore.sh: interpreter directive changed from "#!/bin/sh -ex" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh -ex"
+src/test/docker-test-helper.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_pool_create.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/vstart_wrapper.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/client/iozone.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/client/kernel_untar_build.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/test_rw.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/test/osd/safe-to-destroy.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/cephfs/shell/cephfs-shell: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/tools/cephfs/top/cephfs-top: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/tools/histogram_dump.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/tools/ceph-monstore-update-crush.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/rbd_nbd/rbd-nbd_quiesce: interpreter directive changed from "#!/bin/sh" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/sh"
+src/tools/rgw/parse-cr-dump.py: interpreter directive changed from "#!/usr/bin/python" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python"
+src/tools/rbd_recover_tool/rbd-recover-tool: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/rbd_recover_tool/osd_job: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/rbd_recover_tool/test_rbd_recover_tool.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/crushdiff: interpreter directive changed from "#!/usr/bin/python3" to "/nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3"
+src/tools/setup-virtualenv.sh: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/ceph-lazy/ceph-lazy: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+src/tools/contrib/ceph-migrate-bluestore.bash: interpreter directive changed from "#!/bin/bash" to "/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash"
+fixing cmake files...
+cmake flags: -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/x8j5r19nx9hgpdhrvkpy7mv6s3g7diqw-ceph-17.2.5-lib/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/x8j5r19nx9hgpdhrvkpy7mv6s3g7diqw-ceph-17.2.5-lib/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/x8j5r19nx9hgpdhrvkpy7mv6s3g7diqw-ceph-17.2.5-lib/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/f2kd3naak6lr712y177pk4h0pp8iv763-ceph-17.2.5-doc/share/doc/ceph -DCMAKE_INSTALL_INFODIR=/nix/store/44j2mn6hqnvfd71sjgp67dbn8p5bw96w-ceph-17.2.5/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/jgqsn74qlwjs569mq5635rnwwzybhhda-ceph-17.2.5-man/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/5p9w967klsnnh1rplnkcpxk38z2ry1dm-ceph-17.2.5-dev/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/5p9w967klsnnh1rplnkcpxk38z2ry1dm-ceph-17.2.5-dev/include -DCMAKE_INSTALL_SBINDIR=/nix/store/44j2mn6hqnvfd71sjgp67dbn8p5bw96w-ceph-17.2.5/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/44j2mn6hqnvfd71sjgp67dbn8p5bw96w-ceph-17.2.5/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/x8j5r19nx9hgpdhrvkpy7mv6s3g7diqw-ceph-17.2.5-lib/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/dh31spar4v0vb7qfxsgs48rq15hvqwq5-gcc-wrapper-12.3.0/bin/strip -DCMAKE_RANLIB=/nix/store/dh31spar4v0vb7qfxsgs48rq15hvqwq5-gcc-wrapper-12.3.0/bin/ranlib -DCMAKE_AR=/nix/store/dh31spar4v0vb7qfxsgs48rq15hvqwq5-gcc-wrapper-12.3.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/44j2mn6hqnvfd71sjgp67dbn8p5bw96w-ceph-17.2.5 -DCMAKE_INSTALL_DATADIR=/nix/store/x8j5r19nx9hgpdhrvkpy7mv6s3g7diqw-ceph-17.2.5-lib/lib -DMGR_PYTHON_VERSION=3.10 -DWITH_CEPHFS_SHELL:BOOL=ON -DWITH_SYSTEMD:BOOL=OFF -DWITH_TESTS:BOOL=OFF -DWITH_SYSTEM_ARROW:BOOL=ON -DWITH_SYSTEM_BOOST:BOOL=ON -DWITH_SYSTEM_CIMG:BOOL=ON -DWITH_SYSTEM_JSONCPP:BOOL=ON -DWITH_SYSTEM_GTEST:BOOL=ON -DWITH_SYSTEM_ROCKSDB:BOOL=ON -DWITH_SYSTEM_UTF8PROC:BOOL=ON -DWITH_SYSTEM_ZSTD:BOOL=ON -DWITH_MGR_DASHBOARD_FRONTEND:BOOL=OFF -DWITH_RADOSGW_SELECT_PARQUET:BOOL=OFF -DWITH_XFS=ON -DWITH_SYSTEM_LIBURING=ON 
+-- The CXX compiler identification is GNU 12.3.0
+-- The C compiler identification is GNU 12.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /nix/store/dh31spar4v0vb7qfxsgs48rq15hvqwq5-gcc-wrapper-12.3.0/bin/gcc
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/dh31spar4v0vb7qfxsgs48rq15hvqwq5-gcc-wrapper-12.3.0/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/dh31spar4v0vb7qfxsgs48rq15hvqwq5-gcc-wrapper-12.3.0/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for memset_s
+-- Looking for memset_s - not found
+-- Looking for fallocate
+-- Looking for fallocate - found
+-- Looking for posix_fadvise
+-- Looking for posix_fadvise - found
+-- Looking for posix_fallocate
+-- Looking for posix_fallocate - found
+-- Looking for syncfs
+-- Looking for syncfs - found
+-- Looking for sync_file_range
+-- Looking for sync_file_range - found
+-- Looking for pwritev
+-- Looking for pwritev - found
+-- Looking for splice
+-- Looking for splice - found
+-- Looking for getgrouplist
+-- Looking for getgrouplist - found
+-- Looking for fdatasync
+-- Looking for fdatasync - found
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Looking for name_to_handle_at
+-- Looking for name_to_handle_at - found
+-- Looking for pipe2
+-- Looking for pipe2 - found
+-- Looking for accept4
+-- Looking for accept4 - found
+-- Looking for sigdescr_np
+-- Looking for sigdescr_np - found
+-- Looking for pthread_spin_init
+-- Looking for pthread_spin_init - found
+-- Looking for pthread_set_name_np
+-- Looking for pthread_set_name_np - not found
+-- Looking for pthread_get_name_np
+-- Looking for pthread_get_name_np - not found
+-- Looking for pthread_setname_np
+-- Looking for pthread_setname_np - found
+-- Looking for pthread_getname_np
+-- Looking for pthread_getname_np - found
+-- Looking for pthread_rwlockattr_setkind_np
+-- Looking for pthread_rwlockattr_setkind_np - found
+-- Looking for eventfd
+-- Looking for eventfd - found
+-- Looking for getprogname
+-- Looking for getprogname - not found
+-- Looking for gettid
+-- Looking for gettid - found
+-- Looking for include file linux/types.h
+-- Looking for include file linux/types.h - found
+-- Looking for include file linux/version.h
+-- Looking for include file linux/version.h - found
+-- Looking for include file arpa/nameser_compat.h
+-- Looking for include file arpa/nameser_compat.h - found
+-- Looking for include file sys/mount.h
+-- Looking for include file sys/mount.h - found
+-- Looking for include file sys/param.h
+-- Looking for include file sys/param.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for include file sys/vfs.h
+-- Looking for include file sys/vfs.h - found
+-- Looking for include file sys/prctl.h
+-- Looking for include file sys/prctl.h - found
+-- Looking for include file execinfo.h
+-- Looking for include file execinfo.h - found
+-- Looking for include file sched.h
+-- Looking for include file sched.h - found
+-- Looking for include file valgrind/helgrind.h
+-- Looking for include file valgrind/helgrind.h - not found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of __u8
+-- Check size of __u8 - done
+-- Check size of __u16
+-- Check size of __u16 - done
+-- Check size of __u32
+-- Check size of __u32 - done
+-- Check size of __u64
+-- Check size of __u64 - done
+-- Check size of __s8
+-- Check size of __s8 - done
+-- Check size of __s16
+-- Check size of __s16 - done
+-- Check size of __s32
+-- Check size of __s32 - done
+-- Check size of __s64
+-- Check size of __s64 - done
+-- Check size of in_addr_t
+-- Check size of in_addr_t - done
+-- Looking for _POSIX_TIMERS
+-- Looking for _POSIX_TIMERS - found
+-- Looking for res_nquery
+-- Looking for res_nquery - found
+-- Looking for F_SETPIPE_SZ
+-- Looking for F_SETPIPE_SZ - found
+-- Looking for __func__
+-- Looking for __func__ - found
+-- Looking for __PRETTY_FUNCTION__
+-- Looking for __PRETTY_FUNCTION__ - found
+-- Looking for getentropy
+-- Looking for getentropy - found
+-- Performing Test STRERROR_R_CHAR_P
+-- Performing Test STRERROR_R_CHAR_P - Success
+-- Performing Test HAVE_STAT_ST_MTIM_TV_NSEC
+-- Performing Test HAVE_STAT_ST_MTIM_TV_NSEC - Success
+-- Performing Test HAVE_STAT_ST_MTIMESPEC_TV_NSEC
+-- Performing Test HAVE_STAT_ST_MTIMESPEC_TV_NSEC - Failed
+-- Performing Test HAVE_UNALIGNED_ACCESS
+-- Performing Test HAVE_UNALIGNED_ACCESS - Success
+-- Performing Test HAVE_ATTR_SYMVER
+-- Performing Test HAVE_ATTR_SYMVER - Success
+-- Performing Test HAVE_ASM_SYMVER
+-- Performing Test HAVE_ASM_SYMVER - Success
+-- Performing Test HAVE_CXX11_ATOMIC
+-- Performing Test HAVE_CXX11_ATOMIC - Success
+-- Found verbs: /nix/store/wn081ba8s8kad71y4j087bsxb8wpwq5r-rdma-core-46.1/lib/libibverbs.so  
+-- Performing Test HAVE_IBV_EXP
+-- Performing Test HAVE_IBV_EXP - Failed
+-- Found rdmacm: /nix/store/wn081ba8s8kad71y4j087bsxb8wpwq5r-rdma-core-46.1/lib/librdmacm.so  
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- backtrace facility detected in default set of libraries
+-- Found Backtrace: /nix/store/xaf5r4zscg1ckf89h36rpgpnxkpcc35v-glibc-2.37-8-dev/include  
+-- Found udev: /nix/store/0v5sxvkag4r3ar4ah6zahsisjwyl7ia4-systemd-253.6/lib/libudev.so  
+-- Found blkid: /nix/store/q8skzqkv20h39k5w5wjv7yp74rzfv38q-util-linux-minimal-2.39-lib/lib/libblkid.so  
+-- Found keyutils: /nix/store/x5hq6y3fr1zn5inbzlrbp48in1xj5y04-keyutils-1.6.3-lib/lib/libkeyutils.so  
+-- Found OpenLDAP: /nix/store/977fv67skrpck3jkdkk8bcfbs7iylaqi-openldap-2.6.5-dev/include  
+-- Found FUSE: /nix/store/y85vc7z4b5q0yc7gdqmk0j0fvbbwh6kh-fuse-2.9.9/lib/libfuse.so (found version "2.9") 
+-- Could NOT find xfs (missing: XFS_INCLUDE_DIR) 
+-- Found aio: /nix/store/i7azjqih42yb3r552v3q8vyzjgp09m1b-libaio-0.3.113/lib/libaio.so  
+-- Checking for one of the modules 'libcryptsetup'
+Package devmapper was not found in the pkg-config search path.
+Perhaps you should add the directory containing `devmapper.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'devmapper', required by 'libcryptsetup', not found
+Package devmapper was not found in the pkg-config search path.
+Perhaps you should add the directory containing `devmapper.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'devmapper', required by 'libcryptsetup', not found
+Package devmapper was not found in the pkg-config search path.
+Perhaps you should add the directory containing `devmapper.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'devmapper', required by 'libcryptsetup', not found
+Package devmapper was not found in the pkg-config search path.
+Perhaps you should add the directory containing `devmapper.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'devmapper', required by 'libcryptsetup', not found
+-- Found libcryptsetup: /nix/store/nvnqjh1gwk2iwr4hsl5msrhc55clw856-cryptsetup-2.6.1-dev/include (found suitable version "2.6.1", minimum required is "2.0.5") 
+-- Found SQLite3: /nix/store/x431bgvbyrssryn5pgmp3l35hmmw4ikz-sqlite-3.42.0/lib/libsqlite3.so  
+-- Found snappy: /nix/store/jqdv0w91vc630h0q6vrnd2nzfzhnwxv4-snappy-1.1.10/lib/libsnappy.so  
+-- Found LZ4: /nix/store/wly4c9qfj2417wrn1v1miq2hmva4ikvb-lz4-1.9.4/lib/liblz4.so (found suitable version "1.9.4", minimum required is "1.7") 
+-- Could NOT find gperftools (missing: GPERFTOOLS_INCLUDE_DIR) (Required is at least version "2.6.2")
+-- Found JeMalloc: /nix/store/ay5rbgnfd58wkzn61g3757b4fwv69d20-jemalloc-5.3.0/lib/libjemalloc.so  
+-- Found CURL: /nix/store/ncydaym0bygrjcw8ak8lg12bnvamkvsh-curl-8.1.2/lib/libcurl.so (found version "8.1.2")  
+-- Looking for curl_multi_wait
+-- Looking for curl_multi_wait - found
+-- Found OpenSSL: /nix/store/dmwwgc850b750kxha6bzfjsy2hcr5lw6-openssl-3.0.9/lib/libcrypto.so (found version "3.0.9")  
+-- Found EXPAT: /nix/store/is4fqai514wncid0n3lway06mh1xj52x-expat-2.5.0/lib/libexpat.so (found version "2.5.0") 
+-- Found OATH: /nix/store/1dn1m21iq78vr70nnpcks74zgpjmx7zv-oath-toolkit-2.6.7/lib/liboath.so  
+-- ssl soname: libssl.so.3
+-- crypto soname: libcrypto.so.3
+-- Found Python3: /nix/store/c4g5kkpssa1i3lyba0plqjj1wc60q90r-python3-3.10.12/bin/python3.10 (found suitable exact version "3.10.12") found components: Interpreter Development 
+-- Found ZLIB: /nix/store/bqh7g3bcp7jxbnaa4w9k1m2spmv9q8mq-zlib-1.2.13/lib/libz.so (found version "1.2.13")  
+-- Found LTTngUST: /nix/store/a2b5vv319h2h9k574bk3ki0d2riv6a2g-lttng-ust-2.13.1/lib/liblttng-ust.so;dl (found version "2.3.1") 
+-- Found babeltrace: /nix/store/j6rjfww7vg9fbzyzy9nj5sjjsaiqlqqg-babeltrace-1.5.8/include  
+-- Found RocksDB: /nix/store/v7jx3jndwnwyfqqzxw8k70ayb6yiq7hc-rocksdb-7.9.2/lib/librocksdb.so (found suitable version "7.9.2", minimum required is "5.14") 
+-- Found Boost: /nix/store/zgybdahq869isj64zc1ahza7b8j6qdym-boost-1.79.0-dev/lib/cmake/Boost-1.79.0/BoostConfig.cmake (found suitable version "1.79.0", minimum required is "1.73") found components: atomic chrono thread system regex random program_options date_time iostreams context coroutine python310 filesystem 
+-- Found StdFilesystem: included by standard library  
+-- Ceph/.git directory not found, parsing /build/ceph-17.2.5/src/.git_version for CEPH_GIT_VER and CEPH_GIT_NICE_VER
+-- Performing Test COMPILER_SUPPORTS_PESSIMIZING_MOVE
+-- Performing Test COMPILER_SUPPORTS_PESSIMIZING_MOVE - Success
+-- Performing Test COMPILER_SUPPORTS_REDUNDANT_MOVE
+-- Performing Test COMPILER_SUPPORTS_REDUNDANT_MOVE - Success
+-- Performing Test HAS_FORTIFY_SOURCE
+-- Performing Test HAS_FORTIFY_SOURCE - Success
+-- Performing Test HAS_STACK_PROTECT
+-- Performing Test HAS_STACK_PROTECT - Success
+-- Performing Test HAS_GLIBCXX_ASSERTIONS
+-- Performing Test HAS_GLIBCXX_ASSERTIONS - Success
+-- Performing Test HAVE_ARMV8_CRC_CRYPTO_INTRINSICS
+-- Performing Test HAVE_ARMV8_CRC_CRYPTO_INTRINSICS - Success
+-- Performing Test HAVE_ARMV8_SIMD
+-- Performing Test HAVE_ARMV8_SIMD - Success
+-- Performing Test HAVE_STDLIB_MAP_SPLICING
+-- Performing Test HAVE_STDLIB_MAP_SPLICING - Success
+-- Performing Test COMPILER_SUPPORTS_DIAGNOSTICS_COLOR
+-- Performing Test COMPILER_SUPPORTS_DIAGNOSTICS_COLOR - Success
+-- Check size of suseconds_t
+-- Check size of suseconds_t - done
+-- Performing Test HAS_VTA
+-- Performing Test HAS_VTA - Success
+-- mgr module disabled for 3.10.12: diskprediction_local
+-- Found Lua: /nix/store/0r0wn80sz72dsa26b2sri34g4bvk0y2a-lua-5.4.6/lib/liblua.so;/nix/store/mpydsvzh8vmjqgwf81h2s29gg6lhxxzv-glibc-2.37-8/lib/libm.so (found suitable version "5.4.6", minimum required is "5.3") 
+-- Found Cython: 0.29  
+<string>:1: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+<string>:1: DeprecationWarning: The distutils.sysconfig module is deprecated, use sysconfig instead
+-- Found uring: /nix/store/p65jm398rmmm4cqjwdcbpddw7i37kaxy-liburing-2.4/lib/liburing.a  
+-- Found Zstd: /nix/store/kwi4daslbxvzbmcq0845vhmzgsh69wjq-zstd-1.5.5/lib/libzstd.so (found suitable version "1.5.5", minimum required is "1.4.4") 
+-- Looking for cbreak in /nix/store/9ihncmc652iazi15f9sqb69i8y5lyi4a-ncurses-6.4/lib/libncurses.so
+-- Looking for cbreak in /nix/store/9ihncmc652iazi15f9sqb69i8y5lyi4a-ncurses-6.4/lib/libncurses.so - found
+-- Looking for nodelay in /nix/store/9ihncmc652iazi15f9sqb69i8y5lyi4a-ncurses-6.4/lib/libncurses.so
+-- Looking for nodelay in /nix/store/9ihncmc652iazi15f9sqb69i8y5lyi4a-ncurses-6.4/lib/libncurses.so - found
+-- Found Curses: /nix/store/9ihncmc652iazi15f9sqb69i8y5lyi4a-ncurses-6.4/lib/libncurses.so  
+-- Found nl: /nix/store/67xp90fkh1dagl55ds9v1igi1x688kfm-libnl-3.7.0/lib/libnl-3.so  
+-- Checking for module 'libcap-ng'
+--   Found libcap-ng, version 0.8.3
+-- Found the following ICU libraries:
+--   uc (required): /nix/store/7fgffv198bvqadh73xfy3pjicf2lgsmk-icu4c-73.2/lib/libicuuc.so
+-- Found ICU: /nix/store/lv6xpw268wl3wn1wb6xl19giwzm00pmv-icu4c-73.2-dev/include (found suitable version "73.2", minimum required is "52.0") 
+[33mCMake Warning at src/rgw/store/dbstore/CMakeLists.txt:47 (message):
+  Gtest not enabled
+
+[0m
+-- Performing Test COMPILER_SUPPORTS_WARN_IMPLICIT_CONST_INT_FLOAT_CONVERSION
+-- Performing Test COMPILER_SUPPORTS_WARN_IMPLICIT_CONST_INT_FLOAT_CONVERSION - Failed
+-- Found RabbitMQ: /nix/store/vcnx8r0plywzlcipvbddsjvqp154p2s0-rabbitmq-c-0.13.0/include  
+-- Checking for one of the modules 'rdkafka'
+-- Found RDKafka: /nix/store/0r840yjm787m49w0v96fhmgfllhqwc2f-rdkafka-2.1.1/include (found suitable version "2.1.1", minimum required is "0.9.2") 
+-- Found Doxygen: /nix/store/5kixh27w3l7xhcpf76j3fqqsjfs6hkk5-doxygen-1.9.7/bin/doxygen (found version "1.9.7") found components: doxygen dot 
+-- exclude following files under src: *.js;*.css;.tox;python-common/build;erasure-code/jerasure/jerasure;erasure-code/jerasure/gf-complete;rocksdb;googletest;spdk;xxHash;isa-l;zstd;crypto/isa-l/isa-l_crypto;blkin;rapidjson;dmclock;seastar;fmt;c-ares;spawn;pybind/mgr/rook/rook-client-python;s3select;libkmip;arrow;utf8proc
+-- Configuring done (22.3s)
+-- Generating done (0.8s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_TESTING
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_POLICY_DEFAULT_CMP0025
+    MGR_PYTHON_VERSION
+    WITH_SYSTEM_ARROW
+    WITH_SYSTEM_CIMG
+    WITH_SYSTEM_GTEST
+    WITH_SYSTEM_JSONCPP
+    WITH_SYSTEM_UTF8PROC
+
+[0m
+-- Build files have been written to: /build/ceph-17.2.5/build
+configurePhase completed in 31 seconds
+@nix { "action": "setPhase", "phase": "buildPhase" }
+building
+build flags: -j4 SHELL=/nix/store/l1jb32gfpjcs1sflb8gbknmzf13xg3dv-bash-5.2-p15/bin/bash
+[  0%] [34m[1mGenerating ceph-exporter.yaml[0m
+[  0%] [34m[1mgenerating /build/ceph-17.2.5/build/include/tracing/oprequest.h[0m
+[  1%] [32mBuilding CXX object src/compressor/CMakeFiles/compressor_objs.dir/Compressor.cc.o[0m
+[  1%] [34m[1mGenerating cephfs-mirror.yaml[0m
+[  1%] [32mBuilding C object src/common/CMakeFiles/common_utf8.dir/utf8.c.o[0m
+[  1%] [34m[1mGenerating crimson.yaml[0m
+[  1%] Built target oprequest-tp
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  1%] [34m[1mGenerating global.yaml[0m
+[  1%] [32mBuilding CXX object src/common/CMakeFiles/common_buffer_obj.dir/buffer.cc.o[0m
+[  1%] [34m[1mGenerating immutable-object-cache.yaml[0m
+[  1%] [32m[1mLinking C static library ../../lib/libcommon_utf8.a[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  1%] [34m[1mGenerating mds-client.yaml[0m
+[  1%] Built target common_utf8
+[  1%] [34m[1mGenerating mds.yaml[0m
+[  1%] [34m[1mGenerating mgr.yaml[0m
+[  1%] [32mBuilding CXX object src/common/CMakeFiles/common_texttable_obj.dir/TextTable.cc.o[0m
+[  1%] [34m[1mGenerating mon.yaml[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  2%] [34m[1mGenerating osd.yaml[0m
+[  2%] [34m[1mGenerating rbd-mirror.yaml[0m
+[  2%] [34m[1mGenerating rbd.yaml[0m
+[  2%] [34m[1mGenerating rgw.yaml[0m
+[  2%] [34m[1mGenerating ceph-exporter_options.cc, ../../../include/ceph-exporter_legacy_options.h[0m
+[  2%] [34m[1mGenerating cephfs-mirror_options.cc, ../../../include/cephfs-mirror_legacy_options.h[0m
+[  2%] [34m[1mGenerating crimson_options.cc, ../../../include/crimson_legacy_options.h[0m
+[  2%] [34m[1mGenerating global_options.cc, ../../../include/global_legacy_options.h[0m
+[  2%] Built target common_texttable_obj
+[  2%] [34m[1mGenerating immutable-object-cache_options.cc, ../../../include/immutable-object-cache_legacy_options.h[0m
+[  2%] [34m[1mGenerating mds-client_options.cc, ../../../include/mds-client_legacy_options.h[0m
+[  2%] [34m[1mGenerating mds_options.cc, ../../../include/mds_legacy_options.h[0m
+[  2%] [34m[1mGenerating mgr_options.cc, ../../../include/mgr_legacy_options.h[0m
+[  3%] [34m[1mGenerating mon_options.cc, ../../../include/mon_legacy_options.h[0m
+[  3%] [34m[1mGenerating osd_options.cc, ../../../include/osd_legacy_options.h[0m
+[  3%] [32mBuilding C object src/common/CMakeFiles/common_mountcephfs_objs.dir/armor.c.o[0m
+[  3%] [34m[1mGenerating rbd-mirror_options.cc, ../../../include/rbd-mirror_legacy_options.h[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/common/CMakeFiles/common_mountcephfs_objs.dir/safe_io.c.o[0m
+[  3%] [34m[1mGenerating rbd_options.cc, ../../../include/rbd_legacy_options.h[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/common/CMakeFiles/common_mountcephfs_objs.dir/module.c.o[0m
+[  3%] [34m[1mGenerating rgw_options.cc, ../../../include/rgw_legacy_options.h[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/common/CMakeFiles/common_mountcephfs_objs.dir/addr_parsing.c.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] Built target common_mountcephfs_objs
+[  3%] [32mBuilding CXX object src/arch/CMakeFiles/arch.dir/probe.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/arch/CMakeFiles/arch.dir/arm.c.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32m[1mLinking CXX static library ../../lib/libarch.a[0m
+[  3%] Built target legacy-option-headers
+[  3%] Built target arch
+[  3%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/build_options.cc.o[0m
+[  3%] [32mBuilding C object src/crush/CMakeFiles/crush_objs.dir/builder.c.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/crush/CMakeFiles/crush_objs.dir/mapper.c.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/crush/CMakeFiles/crush_objs.dir/crush.c.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding C object src/crush/CMakeFiles/crush_objs.dir/hash.c.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding CXX object src/crush/CMakeFiles/crush_objs.dir/CrushWrapper.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/build/ceph-17.2.5/src/include/buffer.h:55[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/include/encoding.h:38[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/include/uuid.h:9[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/include/types.h:21[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/common/buffer.cc:23[m[K:
+In function '[01m[Kuint32_t ceph_crc32c(uint32_t, const unsigned char*, unsigned int)[m[K',
+    inlined from '[01m[Kuint32_t ceph_crc32c(uint32_t, const unsigned char*, unsigned int)[m[K' at [01m[K/build/ceph-17.2.5/src/include/crc32c.h:43:24[m[K,
+    inlined from '[01m[Kuint32_t ceph::buffer::v15_2_0::list::iterator_impl<is_const>::crc32c(size_t, uint32_t) [with bool is_const = true][m[K' at [01m[K/build/ceph-17.2.5/src/common/buffer.cc:887[m[K:
+[01m[K/build/ceph-17.2.5/src/include/crc32c.h:50:26:[m[K [01;35m[Kwarning: [m[K'[01m[Kp[m[K' may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   50 |   return [01;35m[Kceph_crc32c_func(crc, data, length)[m[K;
+      |          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/build/ceph-17.2.5/src/common/buffer.cc:[m[K In member function '[01m[Kuint32_t ceph::buffer::v15_2_0::list::iterator_impl<is_const>::crc32c(size_t, uint32_t) [with bool is_const = true][m[K':
+[01m[K/build/ceph-17.2.5/src/common/buffer.cc:885:[m[K [01;36m[Knote: [m[K'[01m[Kp[m[K' was declared here
+  885 |       const char *p;
+      | 
+In function '[01m[Kuint32_t ceph_crc32c(uint32_t, const unsigned char*, unsigned int)[m[K',
+    inlined from '[01m[Kuint32_t ceph_crc32c(uint32_t, const unsigned char*, unsigned int)[m[K' at [01m[K/build/ceph-17.2.5/src/include/crc32c.h:43:24[m[K,
+    inlined from '[01m[Kuint32_t ceph::buffer::v15_2_0::list::iterator_impl<is_const>::crc32c(size_t, uint32_t) [with bool is_const = false][m[K' at [01m[K/build/ceph-17.2.5/src/common/buffer.cc:887[m[K:
+[01m[K/build/ceph-17.2.5/src/include/crc32c.h:50:26:[m[K [01;35m[Kwarning: [m[K'[01m[Kp[m[K' may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+   50 |   return [01;35m[Kceph_crc32c_func(crc, data, length)[m[K;
+      |          [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/build/ceph-17.2.5/src/common/buffer.cc:[m[K In member function '[01m[Kuint32_t ceph::buffer::v15_2_0::list::iterator_impl<is_const>::crc32c(size_t, uint32_t) [with bool is_const = false][m[K':
+[01m[K/build/ceph-17.2.5/src/common/buffer.cc:885:[m[K [01;36m[Knote: [m[K'[01m[Kp[m[K' was declared here
+  885 |       const char *p;
+      | 
+[  3%] Built target compressor_objs
+[  3%] [32mBuilding CXX object src/msg/CMakeFiles/common-msg-objs.dir/DispatchQueue.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] Built target common_buffer_obj
+[  3%] [32mBuilding CXX object src/erasure-code/CMakeFiles/erasure_code.dir/ErasureCodePlugin.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32m[1mLinking CXX static library ../../lib/liberasure_code.a[0m
+[  3%] Built target erasure_code
+[  3%] [32mBuilding CXX object src/CMakeFiles/rados_snap_set_diff_obj.dir/librados/snap_set_diff.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/global_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/build/ceph-17.2.5/src/librados/ListObjectImpl.h:19[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/osd/osd_types.h:51[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/crush/CrushWrapper.cc:4[m[K:
+[01m[K/build/ceph-17.2.5/src/include/rados/librados.hpp:107:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  107 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
+      | 
+In file included from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/string:45[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/locale_classes.h:40[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/ios_base.h:41[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/ios:42[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/istream:38[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/sstream:38[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/osd/osd_types.h:22[m[K:
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/build/ceph-17.2.5/src/librados/snap_set_diff.cc:8[m[K:
+[01m[K/build/ceph-17.2.5/src/include/rados/librados.hpp:107:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  107 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
+      | 
+In file included from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_algobase.h:65[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/vector:60[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/librados/snap_set_diff.cc:4[m[K:
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+[  3%] [32mBuilding CXX object src/msg/CMakeFiles/common-msg-objs.dir/Message.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] Built target rados_snap_set_diff_obj
+[  3%] [32mBuilding CXX object src/cls/CMakeFiles/cls_lock_client.dir/lock/cls_lock_client.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/build/ceph-17.2.5/src/cls/lock/cls_lock_client.cc:17[m[K:
+[01m[K/build/ceph-17.2.5/src/include/rados/librados.hpp:107:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  107 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
+      | 
+In file included from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_algobase.h:65[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_tree.h:63[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/set:60[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/include/encoding.h:17[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/include/uuid.h:9[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/include/types.h:21[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/cls/lock/cls_lock_client.cc:15[m[K:
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+[  3%] [32mBuilding CXX object src/cls/CMakeFiles/cls_lock_client.dir/lock/cls_lock_types.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  3%] [32mBuilding CXX object src/crush/CMakeFiles/crush_objs.dir/CrushCompiler.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/build/ceph-17.2.5/src/librados/ListObjectImpl.h:19[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/osd/osd_types.h:51[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/messages/MPGStats.h:18[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/msg/Message.cc:17[m[K:
+[01m[K/build/ceph-17.2.5/src/include/rados/librados.hpp:107:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  107 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
+      | 
+In file included from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/string:45[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/locale_classes.h:40[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/ios_base.h:41[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/ios:42[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/ostream:38[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/iostream:39[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/msg/Message.cc:9[m[K:
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/build/ceph-17.2.5/src/mon/Session.h:22[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/messages/PaxosServiceMessage.h:7[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/messages/MPGStats.h:19[m[K:
+[01m[K/build/ceph-17.2.5/src/include/xlist.h:162:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  162 |   class iterator: std::iterator<std::forward_iterator_tag, T> {
+      | 
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+[01m[K/build/ceph-17.2.5/src/include/xlist.h:186:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  186 |   class const_iterator: std::iterator<std::forward_iterator_tag, T> {
+      | 
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+[  3%] [32mBuilding CXX object src/cls/CMakeFiles/cls_lock_client.dir/lock/cls_lock_ops.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] [32mBuilding CXX object src/crush/CMakeFiles/crush_objs.dir/CrushTester.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] [32m[1mLinking CXX static library ../../lib/libcls_lock_client.a[0m
+[  4%] Built target cls_lock_client
+[  4%] [34m[1mgenerating /build/ceph-17.2.5/build/include/tracing/librados.h[0m
+[  4%] Built target librados-tp
+[  4%] [32mBuilding CXX object src/erasure-code/CMakeFiles/erasure_code_objs.dir/ErasureCode.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[01m[Kg++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+make[2]: *** [src/msg/CMakeFiles/common-msg-objs.dir/build.make:90: src/msg/CMakeFiles/common-msg-objs.dir/Message.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2843: src/msg/CMakeFiles/common-msg-objs.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/cephfs-mirror_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+In file included from [01m[K/build/ceph-17.2.5/src/librados/ListObjectImpl.h:19[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/osd/osd_types.h:51[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/erasure-code/ErasureCode.cc:26[m[K:
+[01m[K/build/ceph-17.2.5/src/include/rados/librados.hpp:107:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator[m[K' is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  107 |   class CEPH_RADOS_API NObjectIterator : public std::iterator <std::forward_iterator_tag, ListObject> {
+      | 
+In file included from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_algobase.h:65[m[K,
+                 from [01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/algorithm:60[m[K,
+                 from [01m[K/build/ceph-17.2.5/src/erasure-code/ErasureCode.cc:18[m[K:
+[01m[K/nix/store/vyb21vqpjssazvw0lc2j8l1y0g4x1cpk-gcc-12.3.0/include/c++/12.3.0/bits/stl_iterator_base_types.h:127:34:[m[K [01;36m[Knote: [m[Kdeclared here
+  127 |     struct _GLIBCXX17_DEPRECATED [01;36m[Kiterator[m[K
+      |                                  [01;36m[K^~~~~~~~[m[K
+[  4%] [32mBuilding CXX object src/crush/CMakeFiles/crush_objs.dir/CrushLocation.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] Built target erasure_code_objs
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/crimson_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/mgr_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/mds_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] Built target crush_objs
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/mds-client_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/mon_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  4%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/osd_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  5%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/rbd_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  5%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/rbd-mirror_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  5%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/immutable-object-cache_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  5%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/ceph-exporter_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  5%] [32mBuilding CXX object src/common/options/CMakeFiles/common-options-objs.dir/rgw_options.cc.o[0m
+[01m[K<command-line>:[m[K [01;35m[Kwarning: [m[K"_FORTIFY_SOURCE" redefined
+[01m[K<command-line>:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[  7%] Built target common-options-objs
+make: *** [Makefile:146: all] Error 2

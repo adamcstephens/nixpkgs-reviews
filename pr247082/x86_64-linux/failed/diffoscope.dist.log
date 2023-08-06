@@ -1,0 +1,1264 @@
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Using setuptoolsShellHook
+Sourcing pip-install-hook
+Using pipInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing setuptools-check-hook
+Using setuptoolsCheckPhase
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+Removing setuptoolsCheckPhase
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+unpacking sources
+unpacking source archive /nix/store/3aw3kh5m7wcjyb5qb40bv6c3pxs2bm9l-diffoscope-246.tar.bz2
+source root is diffoscope-246
+setting SOURCE_DATE_EPOCH to timestamp 1690531028 of file diffoscope-246/tests/utils/versions.py
+@nix { "action": "setPhase", "phase": "patchPhase" }
+patching sources
+applying patch /nix/store/k3rsi5di3hg85jkachv8fbkmdjvdkjix-ignore_links.patch
+patching file diffoscope/comparators/directory.py
+Hunk #1 succeeded at 59 (offset -18 lines).
+Hunk #2 succeeded at 69 (offset -18 lines).
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+configuring
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+building
+Executing setuptoolsBuildPhase
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/diffoscope
+copying diffoscope/__init__.py -> build/lib/diffoscope
+copying diffoscope/tempfiles.py -> build/lib/diffoscope
+copying diffoscope/external_tools.py -> build/lib/diffoscope
+copying diffoscope/profiling.py -> build/lib/diffoscope
+copying diffoscope/excludes.py -> build/lib/diffoscope
+copying diffoscope/path.py -> build/lib/diffoscope
+copying diffoscope/config.py -> build/lib/diffoscope
+copying diffoscope/difference.py -> build/lib/diffoscope
+copying diffoscope/progress.py -> build/lib/diffoscope
+copying diffoscope/environ.py -> build/lib/diffoscope
+copying diffoscope/tools.py -> build/lib/diffoscope
+copying diffoscope/feeders.py -> build/lib/diffoscope
+copying diffoscope/diff.py -> build/lib/diffoscope
+copying diffoscope/changes.py -> build/lib/diffoscope
+copying diffoscope/exc.py -> build/lib/diffoscope
+copying diffoscope/logging.py -> build/lib/diffoscope
+copying diffoscope/utils.py -> build/lib/diffoscope
+copying diffoscope/main.py -> build/lib/diffoscope
+creating build/lib/diffoscope/readers
+copying diffoscope/readers/utils.py -> build/lib/diffoscope/readers
+copying diffoscope/readers/__init__.py -> build/lib/diffoscope/readers
+copying diffoscope/readers/json.py -> build/lib/diffoscope/readers
+creating build/lib/diffoscope/comparators
+copying diffoscope/comparators/vmlinuz.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/symlink.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/pgp.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/pe32.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/apk.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/binwalk.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/iso9660.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/fonts.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/png.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/xsb.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/dex.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/xml.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/javascript.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/docx.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/missing_file.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/debian_fallback.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/java.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/directory.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ipk.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/llvm.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/squashfs.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/gettext.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/decompile.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/pcap.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/berkeley_db.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/odt.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/sqlite.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/gzip.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/rpm_fallback.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/dtb.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/tar.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ps.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/mono.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/__init__.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/sphinx.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/deb.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/kbx.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/lzip.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/debian.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/bzip2.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/hdf.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/git.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ar.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/elf.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ocaml.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/icc.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/macho.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/wasm.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/android.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/arsc.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/image.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/fontconfig.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/rpm.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/xmlb.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/json.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/openssl.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/python.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ffprobe.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/html.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ppu.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/openssh.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/text.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/ogg.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/xz.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/zst.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/uimage.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/binary.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/gif.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/pdf.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/device.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/zip.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/haskell.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/cbfs.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/rust.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/gnumeric.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/fit.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/lz4.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/rdata.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/fsimage.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/socket_or_fifo.py -> build/lib/diffoscope/comparators
+copying diffoscope/comparators/cpio.py -> build/lib/diffoscope/comparators
+creating build/lib/diffoscope/presenters
+copying diffoscope/presenters/__init__.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/text.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/markdown.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/json.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/icon.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/formats.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/utils.py -> build/lib/diffoscope/presenters
+copying diffoscope/presenters/restructuredtext.py -> build/lib/diffoscope/presenters
+creating build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/archive.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/operation.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/fuzzy.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/command.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/specialize.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/compare.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/container.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/__init__.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/libarchive.py -> build/lib/diffoscope/comparators/utils
+copying diffoscope/comparators/utils/file.py -> build/lib/diffoscope/comparators/utils
+creating build/lib/diffoscope/presenters/html
+copying diffoscope/presenters/html/__init__.py -> build/lib/diffoscope/presenters/html
+copying diffoscope/presenters/html/html.py -> build/lib/diffoscope/presenters/html
+copying diffoscope/presenters/html/templates.py -> build/lib/diffoscope/presenters/html
+creating build/lib/diffoscope/scripts
+copying diffoscope/scripts/extract-vmlinux -> build/lib/diffoscope/scripts
+/nix/store/w453w4jw22kf20x0yv8dg08p4gima8mv-python3.10-setuptools-67.4.0/lib/python3.10/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/tools.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/profiling.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/tempfiles.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/difference.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/main.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/diff.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/utils.py -> build/bdist.linux-x86_64/wheel/diffoscope
+creating build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/__init__.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/markdown.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/utils.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/json.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+creating build/bdist.linux-x86_64/wheel/diffoscope/presenters/html
+copying build/lib/diffoscope/presenters/html/html.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters/html
+copying build/lib/diffoscope/presenters/html/__init__.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters/html
+copying build/lib/diffoscope/presenters/html/templates.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters/html
+copying build/lib/diffoscope/presenters/restructuredtext.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/icon.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/formats.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/presenters/text.py -> build/bdist.linux-x86_64/wheel/diffoscope/presenters
+copying build/lib/diffoscope/__init__.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/external_tools.py -> build/bdist.linux-x86_64/wheel/diffoscope
+creating build/bdist.linux-x86_64/wheel/diffoscope/scripts
+copying build/lib/diffoscope/scripts/extract-vmlinux -> build/bdist.linux-x86_64/wheel/diffoscope/scripts
+copying build/lib/diffoscope/environ.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/exc.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/config.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/feeders.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/excludes.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/changes.py -> build/bdist.linux-x86_64/wheel/diffoscope
+creating build/bdist.linux-x86_64/wheel/diffoscope/readers
+copying build/lib/diffoscope/readers/__init__.py -> build/bdist.linux-x86_64/wheel/diffoscope/readers
+copying build/lib/diffoscope/readers/json.py -> build/bdist.linux-x86_64/wheel/diffoscope/readers
+copying build/lib/diffoscope/readers/utils.py -> build/bdist.linux-x86_64/wheel/diffoscope/readers
+copying build/lib/diffoscope/logging.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/path.py -> build/bdist.linux-x86_64/wheel/diffoscope
+copying build/lib/diffoscope/progress.py -> build/bdist.linux-x86_64/wheel/diffoscope
+creating build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/pgp.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/xz.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/wasm.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/gnumeric.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/berkeley_db.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/symlink.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/arsc.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/directory.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/vmlinuz.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/xsb.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/dex.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/xml.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/xmlb.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/png.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/json.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/iso9660.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/debian_fallback.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/apk.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/binwalk.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/rpm_fallback.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/javascript.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/sqlite.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/lzip.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/rdata.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ipk.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ocaml.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/missing_file.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ar.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/gettext.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/cbfs.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/rust.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/bzip2.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/cpio.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/odt.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/html.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/decompile.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/tar.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+creating build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/archive.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/libarchive.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/fuzzy.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/container.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/command.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/specialize.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/operation.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/file.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/__init__.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/utils/compare.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators/utils
+copying build/lib/diffoscope/comparators/dtb.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/macho.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/text.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/image.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/deb.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/docx.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/kbx.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/__init__.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/java.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/uimage.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/binary.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/icc.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/elf.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/device.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/llvm.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/git.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/hdf.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/rpm.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/fontconfig.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ps.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/android.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/pe32.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/python.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/openssl.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ppu.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/fonts.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/openssh.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/gzip.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ffprobe.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/squashfs.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/ogg.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/zst.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/mono.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/haskell.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/pdf.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/zip.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/gif.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/pcap.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/sphinx.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/socket_or_fifo.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/debian.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/fsimage.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/fit.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+copying build/lib/diffoscope/comparators/lz4.py -> build/bdist.linux-x86_64/wheel/diffoscope/comparators
+running install_egg_info
+running egg_info
+creating diffoscope.egg-info
+writing diffoscope.egg-info/PKG-INFO
+writing dependency_links to diffoscope.egg-info/dependency_links.txt
+writing entry points to diffoscope.egg-info/entry_points.txt
+writing requirements to diffoscope.egg-info/requires.txt
+writing top-level names to diffoscope.egg-info/top_level.txt
+writing manifest file 'diffoscope.egg-info/SOURCES.txt'
+reading manifest file 'diffoscope.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'COPYING'
+writing manifest file 'diffoscope.egg-info/SOURCES.txt'
+Copying diffoscope.egg-info to build/bdist.linux-x86_64/wheel/diffoscope-246-py3.10.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/diffoscope-246.dist-info/WHEEL
+creating 'dist/diffoscope-246-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'diffoscope/__init__.py'
+adding 'diffoscope/changes.py'
+adding 'diffoscope/config.py'
+adding 'diffoscope/diff.py'
+adding 'diffoscope/difference.py'
+adding 'diffoscope/environ.py'
+adding 'diffoscope/exc.py'
+adding 'diffoscope/excludes.py'
+adding 'diffoscope/external_tools.py'
+adding 'diffoscope/feeders.py'
+adding 'diffoscope/logging.py'
+adding 'diffoscope/main.py'
+adding 'diffoscope/path.py'
+adding 'diffoscope/profiling.py'
+adding 'diffoscope/progress.py'
+adding 'diffoscope/tempfiles.py'
+adding 'diffoscope/tools.py'
+adding 'diffoscope/utils.py'
+adding 'diffoscope/comparators/__init__.py'
+adding 'diffoscope/comparators/android.py'
+adding 'diffoscope/comparators/apk.py'
+adding 'diffoscope/comparators/ar.py'
+adding 'diffoscope/comparators/arsc.py'
+adding 'diffoscope/comparators/berkeley_db.py'
+adding 'diffoscope/comparators/binary.py'
+adding 'diffoscope/comparators/binwalk.py'
+adding 'diffoscope/comparators/bzip2.py'
+adding 'diffoscope/comparators/cbfs.py'
+adding 'diffoscope/comparators/cpio.py'
+adding 'diffoscope/comparators/deb.py'
+adding 'diffoscope/comparators/debian.py'
+adding 'diffoscope/comparators/debian_fallback.py'
+adding 'diffoscope/comparators/decompile.py'
+adding 'diffoscope/comparators/device.py'
+adding 'diffoscope/comparators/dex.py'
+adding 'diffoscope/comparators/directory.py'
+adding 'diffoscope/comparators/docx.py'
+adding 'diffoscope/comparators/dtb.py'
+adding 'diffoscope/comparators/elf.py'
+adding 'diffoscope/comparators/ffprobe.py'
+adding 'diffoscope/comparators/fit.py'
+adding 'diffoscope/comparators/fontconfig.py'
+adding 'diffoscope/comparators/fonts.py'
+adding 'diffoscope/comparators/fsimage.py'
+adding 'diffoscope/comparators/gettext.py'
+adding 'diffoscope/comparators/gif.py'
+adding 'diffoscope/comparators/git.py'
+adding 'diffoscope/comparators/gnumeric.py'
+adding 'diffoscope/comparators/gzip.py'
+adding 'diffoscope/comparators/haskell.py'
+adding 'diffoscope/comparators/hdf.py'
+adding 'diffoscope/comparators/html.py'
+adding 'diffoscope/comparators/icc.py'
+adding 'diffoscope/comparators/image.py'
+adding 'diffoscope/comparators/ipk.py'
+adding 'diffoscope/comparators/iso9660.py'
+adding 'diffoscope/comparators/java.py'
+adding 'diffoscope/comparators/javascript.py'
+adding 'diffoscope/comparators/json.py'
+adding 'diffoscope/comparators/kbx.py'
+adding 'diffoscope/comparators/llvm.py'
+adding 'diffoscope/comparators/lz4.py'
+adding 'diffoscope/comparators/lzip.py'
+adding 'diffoscope/comparators/macho.py'
+adding 'diffoscope/comparators/missing_file.py'
+adding 'diffoscope/comparators/mono.py'
+adding 'diffoscope/comparators/ocaml.py'
+adding 'diffoscope/comparators/odt.py'
+adding 'diffoscope/comparators/ogg.py'
+adding 'diffoscope/comparators/openssh.py'
+adding 'diffoscope/comparators/openssl.py'
+adding 'diffoscope/comparators/pcap.py'
+adding 'diffoscope/comparators/pdf.py'
+adding 'diffoscope/comparators/pe32.py'
+adding 'diffoscope/comparators/pgp.py'
+adding 'diffoscope/comparators/png.py'
+adding 'diffoscope/comparators/ppu.py'
+adding 'diffoscope/comparators/ps.py'
+adding 'diffoscope/comparators/python.py'
+adding 'diffoscope/comparators/rdata.py'
+adding 'diffoscope/comparators/rpm.py'
+adding 'diffoscope/comparators/rpm_fallback.py'
+adding 'diffoscope/comparators/rust.py'
+adding 'diffoscope/comparators/socket_or_fifo.py'
+adding 'diffoscope/comparators/sphinx.py'
+adding 'diffoscope/comparators/sqlite.py'
+adding 'diffoscope/comparators/squashfs.py'
+adding 'diffoscope/comparators/symlink.py'
+adding 'diffoscope/comparators/tar.py'
+adding 'diffoscope/comparators/text.py'
+adding 'diffoscope/comparators/uimage.py'
+adding 'diffoscope/comparators/vmlinuz.py'
+adding 'diffoscope/comparators/wasm.py'
+adding 'diffoscope/comparators/xml.py'
+adding 'diffoscope/comparators/xmlb.py'
+adding 'diffoscope/comparators/xsb.py'
+adding 'diffoscope/comparators/xz.py'
+adding 'diffoscope/comparators/zip.py'
+adding 'diffoscope/comparators/zst.py'
+adding 'diffoscope/comparators/utils/__init__.py'
+adding 'diffoscope/comparators/utils/archive.py'
+adding 'diffoscope/comparators/utils/command.py'
+adding 'diffoscope/comparators/utils/compare.py'
+adding 'diffoscope/comparators/utils/container.py'
+adding 'diffoscope/comparators/utils/file.py'
+adding 'diffoscope/comparators/utils/fuzzy.py'
+adding 'diffoscope/comparators/utils/libarchive.py'
+adding 'diffoscope/comparators/utils/operation.py'
+adding 'diffoscope/comparators/utils/specialize.py'
+adding 'diffoscope/presenters/__init__.py'
+adding 'diffoscope/presenters/formats.py'
+adding 'diffoscope/presenters/icon.py'
+adding 'diffoscope/presenters/json.py'
+adding 'diffoscope/presenters/markdown.py'
+adding 'diffoscope/presenters/restructuredtext.py'
+adding 'diffoscope/presenters/text.py'
+adding 'diffoscope/presenters/utils.py'
+adding 'diffoscope/presenters/html/__init__.py'
+adding 'diffoscope/presenters/html/html.py'
+adding 'diffoscope/presenters/html/templates.py'
+adding 'diffoscope/readers/__init__.py'
+adding 'diffoscope/readers/json.py'
+adding 'diffoscope/readers/utils.py'
+adding 'diffoscope/scripts/extract-vmlinux'
+adding 'diffoscope-246.dist-info/COPYING'
+adding 'diffoscope-246.dist-info/METADATA'
+adding 'diffoscope-246.dist-info/WHEEL'
+adding 'diffoscope-246.dist-info/entry_points.txt'
+adding 'diffoscope-246.dist-info/top_level.txt'
+adding 'diffoscope-246.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+@nix { "action": "setPhase", "phase": "glibPreInstallPhase" }
+glibPreInstallPhase
+@nix { "action": "setPhase", "phase": "glibPreInstallPhase" }
+glibPreInstallPhase
+@nix { "action": "setPhase", "phase": "installPhase" }
+installing
+Executing pipInstallPhase
+/build/diffoscope-246/dist /build/diffoscope-246
+Processing ./diffoscope-246-py3-none-any.whl
+Requirement already satisfied: libarchive-c in /nix/store/rdqk0990lpaphnrbw8dhiq7qwpym2m79-python3.10-libarchive-c-4.0/lib/python3.10/site-packages (from diffoscope==246) (4.0)
+Requirement already satisfied: python-magic in /nix/store/37xrqbn0bdi4ayrwxdmz1fhh3j0hpkrf-python3.10-python-magic-0.4.27/lib/python3.10/site-packages (from diffoscope==246) (0.4.27)
+Installing collected packages: diffoscope
+Successfully installed diffoscope-246
+/build/diffoscope-246
+make: Entering directory '/build/diffoscope-246/doc'
+{ cat diffoscope.h2m.0; cat ../README.rst | \
+  sed -e '/^\.\. raw:: /d' -e '/^\.\. image:: /d' -e '/ :target: /d' | tee out.txt | \
+  rst2man -q --no-doc-title | \
+  sed -e 's,^ \\- ,,' -e 's,^\[,\\[char91],g' -e 's,\.TH *"" "" "",,g' \
+      -e 's,bin/diffoscope,diffoscope,g' \
+      -e 's,\.SH \(.*\),[\1],g' -e 's,\[diffoscope\],[DESCRIPTION],gi'; } > "diffoscope.h2m"
+help2man --version-string=$(cd .. && python3 setup.py -V) /nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246/bin/diffoscope -N --include="diffoscope.h2m" | \
+  sed -e '/end_of_description_header/,/positional arguments/{d}' > "diffoscope.1"
+make: Leaving directory '/build/diffoscope-246/doc'
+Finished executing pipInstallPhase
+@nix { "action": "setPhase", "phase": "pythonOutputDistPhase" }
+pythonOutputDistPhase
+Executing pythonOutputDistPhase
+Finished executing pythonOutputDistPhase
+@nix { "action": "setPhase", "phase": "glibPreFixupPhase" }
+glibPreFixupPhase
+@nix { "action": "setPhase", "phase": "glibPreFixupPhase" }
+glibPreFixupPhase
+@nix { "action": "setPhase", "phase": "fixupPhase" }
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246
+checking for references to /build/ in /nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246...
+patching script interpreter paths in /nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246
+stripping (with command strip and flags -S -p) in  /nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246/lib /nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246/bin
+shrinking RPATHs of ELF executables and libraries in /nix/store/9fq5290ij16swmcblvpy272sbcr88bix-diffoscope-246-man
+checking for references to /build/ in /nix/store/9fq5290ij16swmcblvpy272sbcr88bix-diffoscope-246-man...
+gzipping man pages under /nix/store/9fq5290ij16swmcblvpy272sbcr88bix-diffoscope-246-man/share/man/
+patching script interpreter paths in /nix/store/9fq5290ij16swmcblvpy272sbcr88bix-diffoscope-246-man
+shrinking RPATHs of ELF executables and libraries in /nix/store/vw41y3fv115sscpg1kd8wrp7hxpgq0ga-diffoscope-246-dist
+checking for references to /build/ in /nix/store/vw41y3fv115sscpg1kd8wrp7hxpgq0ga-diffoscope-246-dist...
+patching script interpreter paths in /nix/store/vw41y3fv115sscpg1kd8wrp7hxpgq0ga-diffoscope-246-dist
+Rewriting #!/nix/store/jhflvwr40xbb0xr6jx4311icp9cym1fp-python3-3.10.12/bin/python3.10 to #!/nix/store/jhflvwr40xbb0xr6jx4311icp9cym1fp-python3-3.10.12
+wrapping `/nix/store/m4djd6i9nj6hajfys9sdxdnxi5nkwv56-diffoscope-246/bin/diffoscope'...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+@nix { "action": "setPhase", "phase": "installCheckPhase" }
+running install tests
+no Makefile or custom installCheckPhase, doing nothing
+@nix { "action": "setPhase", "phase": "pythonCatchConflictsPhase" }
+pythonCatchConflictsPhase
+@nix { "action": "setPhase", "phase": "pythonRemoveBinBytecodePhase" }
+pythonRemoveBinBytecodePhase
+@nix { "action": "setPhase", "phase": "pythonImportsCheckPhase" }
+pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+@nix { "action": "setPhase", "phase": "pytestCheckPhase" }
+pytestCheckPhase
+Executing pytestCheckPhase
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-7.2.1, pluggy-1.0.0 -- /nix/store/jhflvwr40xbb0xr6jx4311icp9cym1fp-python3-3.10.12/bin/python3.10
+cachedir: .pytest_cache
+rootdir: /build/diffoscope-246, configfile: pytest.ini
+[1mcollecting ... [0m[1mcollecting 16 items                                                            [0m[1mcollecting 271 items                                                           [0m[1mcollecting 283 items                                                           [0m[1mcollecting 380 items                                                           [0m[1mcollecting 411 items                                                           [0m[1mcollecting 444 items                                                           [0m[1mcollecting 477 items                                                           [0m[1mcollecting 502 items                                                           [0m[1mcollecting 558 items                                                           [0m[1mcollecting 584 items                                                           [0m[1mcollecting 606 items                                                           [0m[1mcollecting 662 items                                                           [0m[1mcollecting 690 items                                                           [0m[1mcollected 715 items / 5 deselected / 710 selected                              [0m
+
+tests/test_diff_mask.py::test_none [32mPASSED[0m[33m                                [  0%][0m
+tests/test_diff_mask.py::test_all [32mPASSED[0m[33m                                 [  0%][0m
+tests/test_diff_mask.py::test_specific [32mPASSED[0m[33m                            [  0%][0m
+tests/test_difference.py::test_too_much_input_for_diff [32mPASSED[0m[33m            [  0%][0m
+tests/test_difference.py::test_too_long_diff_block_lines [32mPASSED[0m[33m          [  0%][0m
+tests/test_difference.py::test_size_updates [32mPASSED[0m[33m                       [  0%][0m
+tests/test_difference.py::test_traverse_heapq [32mPASSED[0m[33m                     [  0%][0m
+tests/test_difference.py::test_non_str_arguments_to_source1_source2 [32mPASSED[0m[33m [  1%][0m
+tests/test_difference.py::test_adjust_diff_context [32mPASSED[0m[33m                [  1%][0m
+tests/test_excludes.py::test_none [32mPASSED[0m[33m                                 [  1%][0m
+tests/test_excludes.py::test_all [32mPASSED[0m[33m                                  [  1%][0m
+tests/test_excludes.py::test_specific [32mPASSED[0m[33m                             [  1%][0m
+tests/test_excludes.py::test_specific_case [32mPASSED[0m[33m                        [  1%][0m
+tests/test_excludes.py::test_multiple [32mPASSED[0m[33m                             [  1%][0m
+tests/test_excludes.py::test_nomatch [32mPASSED[0m[33m                              [  2%][0m
+tests/test_excludes.py::test_wildcard [32mPASSED[0m[33m                             [  2%][0m
+tests/test_main.py::test_non_existing_files [32mPASSED[0m[33m                       [  2%][0m
+tests/test_main.py::test_non_existing_left_with_new_file [32mPASSED[0m[33m          [  2%][0m
+tests/test_main.py::test_non_existing_right_with_new_file [32mPASSED[0m[33m         [  2%][0m
+tests/test_main.py::test_non_existing_files_with_new_file [32mPASSED[0m[33m         [  2%][0m
+tests/test_main.py::test_remove_temp_files_on_sigterm [32mPASSED[0m[33m             [  2%][0m
+tests/test_main.py::test_ctrl_c_handling [32mPASSED[0m[33m                          [  3%][0m
+tests/test_main.py::test_no_differences [32mPASSED[0m[33m                           [  3%][0m
+tests/test_main.py::test_no_differences_directories [32mPASSED[0m[33m               [  3%][0m
+tests/test_main.py::test_list_tools [32mPASSED[0m[33m                               [  3%][0m
+tests/test_main.py::test_list_missing_tools [32mPASSED[0m[33m                       [  3%][0m
+tests/test_main.py::test_profiling [32mPASSED[0m[33m                                [  3%][0m
+tests/test_main.py::test_non_unicode_filename [31mFAILED[0m[31m                     [  3%][0m
+tests/test_main.py::test_help [32mPASSED[0m[31m                                     [  4%][0m
+tests/test_main.py::test_usage [32mPASSED[0m[31m                                    [  4%][0m
+tests/test_presenters.py::test_text_option_is_default [32mPASSED[0m[31m             [  4%][0m
+tests/test_presenters.py::test_text_proper_indentation [32mPASSED[0m[31m            [  4%][0m
+tests/test_presenters.py::test_text_option_color [32mPASSED[0m[31m                  [  4%][0m
+tests/test_presenters.py::test_text_option_with_file [32mPASSED[0m[31m              [  4%][0m
+tests/test_presenters.py::test_text_option_with_stdout [32mPASSED[0m[31m            [  4%][0m
+tests/test_presenters.py::test_markdown [32mPASSED[0m[31m                           [  5%][0m
+tests/test_presenters.py::test_restructuredtext [32mPASSED[0m[31m                   [  5%][0m
+tests/test_presenters.py::test_json [32mPASSED[0m[31m                               [  5%][0m
+tests/test_presenters.py::test_no_report_option [32mPASSED[0m[31m                   [  5%][0m
+tests/test_presenters.py::test_html_option_with_file [32mPASSED[0m[31m              [  5%][0m
+tests/test_presenters.py::test_html_visuals [32mPASSED[0m[31m                       [  5%][0m
+tests/test_presenters.py::test_htmldir_option [32mPASSED[0m[31m                     [  5%][0m
+tests/test_presenters.py::test_html_option_with_stdout [32mPASSED[0m[31m            [  6%][0m
+tests/test_presenters.py::test_html_regression_875281 [32mPASSED[0m[31m             [  6%][0m
+tests/test_presenters.py::test_limited_print [32mPASSED[0m[31m                      [  6%][0m
+tests/test_presenters.py::test_partial_string [32mPASSED[0m[31m                     [  6%][0m
+tests/test_presenters.py::test_partial_string_cont [32mPASSED[0m[31m                [  6%][0m
+tests/test_presenters.py::test_partial_string_numl [32mPASSED[0m[31m                [  6%][0m
+tests/test_presenters.py::test_partial_string_escape [32mPASSED[0m[31m              [  6%][0m
+tests/test_progress.py::test_progress [32mPASSED[0m[31m                             [  7%][0m
+tests/test_progress.py::test_status_fd [32mPASSED[0m[31m                            [  7%][0m
+tests/test_quines.py::test_identification [32mPASSED[0m[31m                         [  7%][0m
+tests/test_quines.py::test_no_differences [32mPASSED[0m[31m                         [  7%][0m
+tests/test_quines.py::test_difference [32mPASSED[0m[31m                             [  7%][0m
+tests/test_quines.py::test_identification_deb [32mPASSED[0m[31m                     [  7%][0m
+tests/test_quines.py::test_differences_deb [32mPASSED[0m[31m                        [  7%][0m
+tests/test_readers.py::test_json [32mPASSED[0m[31m                                  [  8%][0m
+tests/test_source.py::test_code_is_black_clean [33mSKIPPED[0m (requires black)[31m  [  8%][0m
+tests/test_tools.py::test_all_tools_are_listed [32mPASSED[0m[31m                    [  8%][0m
+tests/test_tools.py::test_get_tools [32mPASSED[0m[31m                               [  8%][0m
+tests/test_tools.py::test_required_tool_not_found [32mPASSED[0m[31m                 [  8%][0m
+tests/test_versions.py::test_version_comparisons[1.0-1.0-0] [32mPASSED[0m[31m       [  8%][0m
+tests/test_versions.py::test_version_comparisons[1.0-2.0--1] [32mPASSED[0m[31m      [  8%][0m
+tests/test_versions.py::test_version_comparisons[2.0-1.0-1] [32mPASSED[0m[31m       [  9%][0m
+tests/test_versions.py::test_version_comparisons[2.0.1-2.0.1-0] [32mPASSED[0m[31m   [  9%][0m
+tests/test_versions.py::test_version_comparisons[2.0-2.0.1--1] [32mPASSED[0m[31m    [  9%][0m
+tests/test_versions.py::test_version_comparisons[2.0.1-2.0-1] [32mPASSED[0m[31m     [  9%][0m
+tests/test_versions.py::test_version_comparisons[2.0.1a-2.0.1a-0] [32mPASSED[0m[31m [  9%][0m
+tests/test_versions.py::test_version_comparisons[2.0.1a-2.0.1-1] [32mPASSED[0m[31m  [  9%][0m
+tests/test_versions.py::test_version_comparisons[2.0.1-2.0.1a--1] [32mPASSED[0m[31m [  9%][0m
+tests/test_versions.py::test_version_comparisons[5.5p1-5.5p1-0] [32mPASSED[0m[31m   [ 10%][0m
+tests/test_versions.py::test_version_comparisons[5.5p1-5.5p2--1] [32mPASSED[0m[31m  [ 10%][0m
+tests/test_versions.py::test_version_comparisons[5.5p2-5.5p1-1] [32mPASSED[0m[31m   [ 10%][0m
+tests/test_versions.py::test_version_comparisons[5.5p10-5.5p10-0] [32mPASSED[0m[31m [ 10%][0m
+tests/test_versions.py::test_version_comparisons[5.5p1-5.5p10--1] [32mPASSED[0m[31m [ 10%][0m
+tests/test_versions.py::test_version_comparisons[5.5p10-5.5p1-1] [32mPASSED[0m[31m  [ 10%][0m
+tests/test_versions.py::test_version_comparisons[10xyz-10.1xyz--1] [32mPASSED[0m[31m [ 10%][0m
+tests/test_versions.py::test_version_comparisons[10.1xyz-10xyz-1] [32mPASSED[0m[31m [ 10%][0m
+tests/test_versions.py::test_version_comparisons[xyz10-xyz10-0] [32mPASSED[0m[31m   [ 11%][0m
+tests/test_versions.py::test_version_comparisons[xyz10-xyz10.1--1] [32mPASSED[0m[31m [ 11%][0m
+tests/test_versions.py::test_version_comparisons[xyz10.1-xyz10-1] [32mPASSED[0m[31m [ 11%][0m
+tests/test_versions.py::test_version_comparisons[xyz.4-xyz.4-0] [32mPASSED[0m[31m   [ 11%][0m
+tests/test_versions.py::test_version_comparisons[xyz.4-8--1] [32mPASSED[0m[31m      [ 11%][0m
+tests/test_versions.py::test_version_comparisons[8-xyz.4-1] [32mPASSED[0m[31m       [ 11%][0m
+tests/test_versions.py::test_version_comparisons[xyz.4-2--1] [32mPASSED[0m[31m      [ 11%][0m
+tests/test_versions.py::test_version_comparisons[2-xyz.4-1] [32mPASSED[0m[31m       [ 12%][0m
+tests/test_versions.py::test_version_comparisons[5.5p2-5.6p1--1] [32mPASSED[0m[31m  [ 12%][0m
+tests/test_versions.py::test_version_comparisons[5.6p1-5.5p2-1] [32mPASSED[0m[31m   [ 12%][0m
+tests/test_versions.py::test_version_comparisons[5.6p1-6.5p1--1] [32mPASSED[0m[31m  [ 12%][0m
+tests/test_versions.py::test_version_comparisons[6.5p1-5.6p1-1] [32mPASSED[0m[31m   [ 12%][0m
+tests/test_versions.py::test_version_comparisons[6.0.rc1-6.0-1] [32mPASSED[0m[31m   [ 12%][0m
+tests/test_versions.py::test_version_comparisons[6.0-6.0.rc1--1] [32mPASSED[0m[31m  [ 12%][0m
+tests/test_versions.py::test_version_comparisons[10b2-10a1-1] [32mPASSED[0m[31m     [ 13%][0m
+tests/test_versions.py::test_version_comparisons[10a2-10b2--1] [32mPASSED[0m[31m    [ 13%][0m
+tests/test_versions.py::test_version_comparisons[1.0aa-1.0aa-0] [32mPASSED[0m[31m   [ 13%][0m
+tests/test_versions.py::test_version_comparisons[1.0a-1.0aa--1] [32mPASSED[0m[31m   [ 13%][0m
+tests/test_versions.py::test_version_comparisons[1.0aa-1.0a-1] [32mPASSED[0m[31m    [ 13%][0m
+tests/test_versions.py::test_version_comparisons[10.0001-10.0001-0] [32mPASSED[0m[31m [ 13%][0m
+tests/test_versions.py::test_version_comparisons[10.0001-10.1-0] [32mPASSED[0m[31m  [ 13%][0m
+tests/test_versions.py::test_version_comparisons[10.1-10.0001-0] [32mPASSED[0m[31m  [ 14%][0m
+tests/test_versions.py::test_version_comparisons[10.0001-10.0039--1] [32mPASSED[0m[31m [ 14%][0m
+tests/test_versions.py::test_version_comparisons[10.0039-10.0001-1] [32mPASSED[0m[31m [ 14%][0m
+tests/test_versions.py::test_version_comparisons[4.999.9-5.0--1] [32mPASSED[0m[31m  [ 14%][0m
+tests/test_versions.py::test_version_comparisons[5.0-4.999.9-1] [32mPASSED[0m[31m   [ 14%][0m
+tests/test_versions.py::test_version_comparisons[20101121-20101121-0] [32mPASSED[0m[31m [ 14%][0m
+tests/test_versions.py::test_version_comparisons[20101121-20101122--1] [32mPASSED[0m[31m [ 14%][0m
+tests/test_versions.py::test_version_comparisons[20101122-20101121-1] [32mPASSED[0m[31m [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2_0-2_0-0] [32mPASSED[0m[31m       [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2.0-2_0-0] [32mPASSED[0m[31m       [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2_0-2.0-0] [32mPASSED[0m[31m       [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2_0.-2_0-0] [32mPASSED[0m[31m      [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2..0-2_0__-0] [32mPASSED[0m[31m    [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2_0-__2.0-0] [32mPASSED[0m[31m     [ 15%][0m
+tests/test_versions.py::test_version_comparisons[2_1.-2_0-1] [32mPASSED[0m[31m      [ 16%][0m
+tests/test_versions.py::test_version_comparisons[2..1-2_0__-1] [32mPASSED[0m[31m    [ 16%][0m
+tests/test_versions.py::test_version_comparisons[2_1-__2.0-1] [32mPASSED[0m[31m     [ 16%][0m
+tests/test_versions.py::test_version_comparisons[2_1.-2_2--1] [32mPASSED[0m[31m     [ 16%][0m
+tests/test_versions.py::test_version_comparisons[2..1-2_2__--1] [32mPASSED[0m[31m   [ 16%][0m
+tests/test_versions.py::test_version_comparisons[2_1-__2.2--1] [32mPASSED[0m[31m    [ 16%][0m
+tests/test_versions.py::test_version_comparisons[a-a-00] [32mPASSED[0m[31m          [ 16%][0m
+tests/test_versions.py::test_version_comparisons[a+-a+-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[a+-a_-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[a_-a+-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[+a-+a-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[+a-_a-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[_a-+a-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[+_-+_-0] [32mPASSED[0m[31m         [ 17%][0m
+tests/test_versions.py::test_version_comparisons[_+-+_-0] [32mPASSED[0m[31m         [ 18%][0m
+tests/test_versions.py::test_version_comparisons[_+-_+-0] [32mPASSED[0m[31m         [ 18%][0m
+tests/test_versions.py::test_version_comparisons[+-_-0] [32mPASSED[0m[31m           [ 18%][0m
+tests/test_versions.py::test_version_comparisons[_-+-0] [32mPASSED[0m[31m           [ 18%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1-1.0~rc1-0] [32mPASSED[0m[31m [ 18%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1-1.0--1] [32mPASSED[0m[31m  [ 18%][0m
+tests/test_versions.py::test_version_comparisons[1.0-1.0~rc1-1] [32mPASSED[0m[31m   [ 18%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1-1.0~rc2--1] [32mPASSED[0m[31m [ 19%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc2-1.0~rc1-1] [32mPASSED[0m[31m [ 19%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1~git123-1.0~rc1~git123-0] [32mPASSED[0m[31m [ 19%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1~git123-1.0~rc1--1] [32mPASSED[0m[31m [ 19%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1-1.0~rc1~git123-1] [32mPASSED[0m[31m [ 19%][0m
+tests/test_versions.py::test_version_comparisons[a-a-01] [32mPASSED[0m[31m          [ 19%][0m
+tests/test_versions.py::test_version_comparisons[a~-a--1] [32mPASSED[0m[31m         [ 19%][0m
+tests/test_versions.py::test_version_comparisons[a~~-a--1] [32mPASSED[0m[31m        [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a~~~-a--1] [32mPASSED[0m[31m       [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a~~~^-a--1] [32mPASSED[0m[31m      [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a^-a-10] [32mPASSED[0m[31m         [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a^-a-11] [32mPASSED[0m[31m         [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a^-a^-0] [32mPASSED[0m[31m         [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a^-a^^--1] [32mPASSED[0m[31m       [ 20%][0m
+tests/test_versions.py::test_version_comparisons[a^b-a^^-1] [32mPASSED[0m[31m       [ 20%][0m
+tests/test_versions.py::test_version_comparisons[1.0^-1.0^-0] [32mPASSED[0m[31m     [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0^-1.0-1] [32mPASSED[0m[31m      [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0-1.0^--1] [32mPASSED[0m[31m     [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1-1.0^git1-0] [32mPASSED[0m[31m [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1-1.0-1] [32mPASSED[0m[31m  [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0-1.0^git1--1] [32mPASSED[0m[31m [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1-1.0^git2--1] [32mPASSED[0m[31m [ 21%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git2-1.0^git1-1] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1-1.01--1] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.01-1.0^git1-1] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.0^20160101-1.0^20160101-0] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.0^20160101-1.0.1--1] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.0.1-1.0^20160101-1] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.0^20160101^git1-1.0^20160101^git1-0] [32mPASSED[0m[31m [ 22%][0m
+tests/test_versions.py::test_version_comparisons[1.0^20160102-1.0^20160101^git1-1] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0^20160101^git1-1.0^20160102--1] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1^git1-1.0~rc1^git1-0] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1^git1-1.0~rc1-1] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0~rc1-1.0~rc1^git1--1] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1~pre-1.0^git1~pre-0] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1-1.0^git1~pre-1] [32mPASSED[0m[31m [ 23%][0m
+tests/test_versions.py::test_version_comparisons[1.0^git1~pre-1.0^git1--1] [32mPASSED[0m[31m [ 24%][0m
+tests/test_versions.py::test_version_comparisons[0-0-0] [32mPASSED[0m[31m           [ 24%][0m
+tests/test_versions.py::test_version_comparisons[0-00-0] [32mPASSED[0m[31m          [ 24%][0m
+tests/test_versions.py::test_version_comparisons[0-000-0] [32mPASSED[0m[31m         [ 24%][0m
+tests/test_versions.py::test_version_comparisons[00-000-0] [32mPASSED[0m[31m        [ 24%][0m
+tests/test_versions.py::test_version_comparisons[000-000-0] [32mPASSED[0m[31m       [ 24%][0m
+tests/test_versions.py::test_version_comparisons[00-0-0] [32mPASSED[0m[31m          [ 24%][0m
+tests/test_versions.py::test_version_comparisons[000-0-0] [32mPASSED[0m[31m         [ 25%][0m
+tests/test_versions.py::test_version_comparisons[0-0.0--1] [32mPASSED[0m[31m        [ 25%][0m
+tests/test_versions.py::test_version_comparisons[0.0-0-1] [32mPASSED[0m[31m         [ 25%][0m
+tests/test_versions.py::test_version_comparisons[0~-0--1] [32mPASSED[0m[31m         [ 25%][0m
+tests/test_versions.py::test_version_comparisons[0^-0-1] [32mPASSED[0m[31m          [ 25%][0m
+tests/test_versions.py::test_version_comparisons[0^-0^-0] [32mPASSED[0m[31m         [ 25%][0m
+tests/test_versions.py::test_version_comparisons[0^-0^~-1] [32mPASSED[0m[31m        [ 25%][0m
+tests/test_versions.py::test_version_lt[1.0-2.0] [32mPASSED[0m[31m                  [ 26%][0m
+tests/test_versions.py::test_version_lt[2.0-2.0.1] [32mPASSED[0m[31m                [ 26%][0m
+tests/test_versions.py::test_version_lt[2.0.1-2.0.1a] [32mPASSED[0m[31m             [ 26%][0m
+tests/test_versions.py::test_version_lt[5.5p1-5.5p2] [32mPASSED[0m[31m              [ 26%][0m
+tests/test_versions.py::test_version_lt[5.5p1-5.5p10] [32mPASSED[0m[31m             [ 26%][0m
+tests/test_versions.py::test_version_lt[10xyz-10.1xyz] [32mPASSED[0m[31m            [ 26%][0m
+tests/test_versions.py::test_version_lt[xyz10-xyz10.1] [32mPASSED[0m[31m            [ 26%][0m
+tests/test_versions.py::test_version_lt[xyz.4-8] [32mPASSED[0m[31m                  [ 27%][0m
+tests/test_versions.py::test_version_lt[xyz.4-2] [32mPASSED[0m[31m                  [ 27%][0m
+tests/test_versions.py::test_version_lt[5.5p2-5.6p1] [32mPASSED[0m[31m              [ 27%][0m
+tests/test_versions.py::test_version_lt[5.6p1-6.5p1] [32mPASSED[0m[31m              [ 27%][0m
+tests/test_versions.py::test_version_lt[6.0-6.0.rc1] [32mPASSED[0m[31m              [ 27%][0m
+tests/test_versions.py::test_version_lt[10a2-10b2] [32mPASSED[0m[31m                [ 27%][0m
+tests/test_versions.py::test_version_lt[1.0a-1.0aa] [32mPASSED[0m[31m               [ 27%][0m
+tests/test_versions.py::test_version_lt[10.0001-10.0039] [32mPASSED[0m[31m          [ 28%][0m
+tests/test_versions.py::test_version_lt[4.999.9-5.0] [32mPASSED[0m[31m              [ 28%][0m
+tests/test_versions.py::test_version_lt[20101121-20101122] [32mPASSED[0m[31m        [ 28%][0m
+tests/test_versions.py::test_version_lt[2_1.-2_2] [32mPASSED[0m[31m                 [ 28%][0m
+tests/test_versions.py::test_version_lt[2..1-2_2__] [32mPASSED[0m[31m               [ 28%][0m
+tests/test_versions.py::test_version_lt[2_1-__2.2] [32mPASSED[0m[31m                [ 28%][0m
+tests/test_versions.py::test_version_lt[1.0~rc1-1.0] [32mPASSED[0m[31m              [ 28%][0m
+tests/test_versions.py::test_version_lt[1.0~rc1-1.0~rc2] [32mPASSED[0m[31m          [ 29%][0m
+tests/test_versions.py::test_version_lt[1.0~rc1~git123-1.0~rc1] [32mPASSED[0m[31m   [ 29%][0m
+tests/test_versions.py::test_version_lt[a~-a] [32mPASSED[0m[31m                     [ 29%][0m
+tests/test_versions.py::test_version_lt[a~~-a] [32mPASSED[0m[31m                    [ 29%][0m
+tests/test_versions.py::test_version_lt[a~~~-a] [32mPASSED[0m[31m                   [ 29%][0m
+tests/test_versions.py::test_version_lt[a~~~^-a] [32mPASSED[0m[31m                  [ 29%][0m
+tests/test_versions.py::test_version_lt[a^-a^^] [32mPASSED[0m[31m                   [ 29%][0m
+tests/test_versions.py::test_version_lt[1.0-1.0^] [32mPASSED[0m[31m                 [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0-1.0^git1] [32mPASSED[0m[31m             [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0^git1-1.0^git2] [32mPASSED[0m[31m        [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0^git1-1.01] [32mPASSED[0m[31m            [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0^20160101-1.0.1] [32mPASSED[0m[31m       [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0^20160101^git1-1.0^20160102] [32mPASSED[0m[31m [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0~rc1-1.0~rc1^git1] [32mPASSED[0m[31m     [ 30%][0m
+tests/test_versions.py::test_version_lt[1.0^git1~pre-1.0^git1] [32mPASSED[0m[31m    [ 30%][0m
+tests/test_versions.py::test_version_lt[0-0.0] [32mPASSED[0m[31m                    [ 31%][0m
+tests/test_versions.py::test_version_lt[0~-0] [32mPASSED[0m[31m                     [ 31%][0m
+tests/test_versions.py::test_version_gt[1.0-1.0] [32mPASSED[0m[31m                  [ 31%][0m
+tests/test_versions.py::test_version_gt[2.0.1-2.0.1] [32mPASSED[0m[31m              [ 31%][0m
+tests/test_versions.py::test_version_gt[2.0.1a-2.0.1a] [32mPASSED[0m[31m            [ 31%][0m
+tests/test_versions.py::test_version_gt[5.5p1-5.5p1] [32mPASSED[0m[31m              [ 31%][0m
+tests/test_versions.py::test_version_gt[5.5p10-5.5p10] [32mPASSED[0m[31m            [ 31%][0m
+tests/test_versions.py::test_version_gt[xyz10-xyz10] [32mPASSED[0m[31m              [ 32%][0m
+tests/test_versions.py::test_version_gt[xyz.4-xyz.4] [32mPASSED[0m[31m              [ 32%][0m
+tests/test_versions.py::test_version_gt[1.0aa-1.0aa] [32mPASSED[0m[31m              [ 32%][0m
+tests/test_versions.py::test_version_gt[10.0001-10.0001] [32mPASSED[0m[31m          [ 32%][0m
+tests/test_versions.py::test_version_gt[10.0001-10.1] [32mPASSED[0m[31m             [ 32%][0m
+tests/test_versions.py::test_version_gt[10.1-10.0001] [32mPASSED[0m[31m             [ 32%][0m
+tests/test_versions.py::test_version_gt[20101121-20101121] [32mPASSED[0m[31m        [ 32%][0m
+tests/test_versions.py::test_version_gt[2_0-2_0] [32mPASSED[0m[31m                  [ 33%][0m
+tests/test_versions.py::test_version_gt[2.0-2_0] [32mPASSED[0m[31m                  [ 33%][0m
+tests/test_versions.py::test_version_gt[2_0-2.0] [32mPASSED[0m[31m                  [ 33%][0m
+tests/test_versions.py::test_version_gt[2_0.-2_0] [32mPASSED[0m[31m                 [ 33%][0m
+tests/test_versions.py::test_version_gt[2..0-2_0__] [32mPASSED[0m[31m               [ 33%][0m
+tests/test_versions.py::test_version_gt[2_0-__2.0] [32mPASSED[0m[31m                [ 33%][0m
+tests/test_versions.py::test_version_gt[a-a0] [32mPASSED[0m[31m                     [ 33%][0m
+tests/test_versions.py::test_version_gt[a+-a+] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[a+-a_] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[a_-a+] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[+a-+a] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[+a-_a] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[_a-+a] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[+_-+_] [32mPASSED[0m[31m                    [ 34%][0m
+tests/test_versions.py::test_version_gt[_+-+_] [32mPASSED[0m[31m                    [ 35%][0m
+tests/test_versions.py::test_version_gt[_+-_+] [32mPASSED[0m[31m                    [ 35%][0m
+tests/test_versions.py::test_version_gt[+-_] [32mPASSED[0m[31m                      [ 35%][0m
+tests/test_versions.py::test_version_gt[_-+] [32mPASSED[0m[31m                      [ 35%][0m
+tests/test_versions.py::test_version_gt[1.0~rc1-1.0~rc1] [32mPASSED[0m[31m          [ 35%][0m
+tests/test_versions.py::test_version_gt[1.0~rc1~git123-1.0~rc1~git123] [32mPASSED[0m[31m [ 35%][0m
+tests/test_versions.py::test_version_gt[a-a1] [32mPASSED[0m[31m                     [ 35%][0m
+tests/test_versions.py::test_version_gt[a^-a^] [32mPASSED[0m[31m                    [ 36%][0m
+tests/test_versions.py::test_version_gt[1.0^-1.0^] [32mPASSED[0m[31m                [ 36%][0m
+tests/test_versions.py::test_version_gt[1.0^git1-1.0^git1] [32mPASSED[0m[31m        [ 36%][0m
+tests/test_versions.py::test_version_gt[1.0^20160101-1.0^20160101] [32mPASSED[0m[31m [ 36%][0m
+tests/test_versions.py::test_version_gt[1.0^20160101^git1-1.0^20160101^git1] [32mPASSED[0m[31m [ 36%][0m
+tests/test_versions.py::test_version_gt[1.0~rc1^git1-1.0~rc1^git1] [32mPASSED[0m[31m [ 36%][0m
+tests/test_versions.py::test_version_gt[1.0^git1~pre-1.0^git1~pre] [32mPASSED[0m[31m [ 36%][0m
+tests/test_versions.py::test_version_gt[0-0] [32mPASSED[0m[31m                      [ 37%][0m
+tests/test_versions.py::test_version_gt[0-00] [32mPASSED[0m[31m                     [ 37%][0m
+tests/test_versions.py::test_version_gt[0-000] [32mPASSED[0m[31m                    [ 37%][0m
+tests/test_versions.py::test_version_gt[00-000] [32mPASSED[0m[31m                   [ 37%][0m
+tests/test_versions.py::test_version_gt[000-000] [32mPASSED[0m[31m                  [ 37%][0m
+tests/test_versions.py::test_version_gt[00-0] [32mPASSED[0m[31m                     [ 37%][0m
+tests/test_versions.py::test_version_gt[000-0] [32mPASSED[0m[31m                    [ 37%][0m
+tests/test_versions.py::test_version_gt[0^-0^] [32mPASSED[0m[31m                    [ 38%][0m
+tests/comparators/test_android.py::test_identification [32mPASSED[0m[31m            [ 38%][0m
+tests/comparators/test_android.py::test_no_differences [32mPASSED[0m[31m            [ 38%][0m
+tests/comparators/test_android.py::test_diff [32mPASSED[0m[31m                      [ 38%][0m
+tests/comparators/test_android.py::test_compare_non_existing [32mPASSED[0m[31m      [ 38%][0m
+tests/comparators/test_apk.py::test_identification [32mPASSED[0m[31m                [ 38%][0m
+tests/comparators/test_apk.py::test_no_differences [32mPASSED[0m[31m                [ 38%][0m
+tests/comparators/test_apk.py::test_compare_non_existing [32mPASSED[0m[31m          [ 39%][0m
+tests/comparators/test_apk.py::test_zipinfo [32mPASSED[0m[31m                       [ 39%][0m
+tests/comparators/test_apk.py::test_android_manifest [33mXFAIL[0m[31m               [ 39%][0m
+tests/comparators/test_apk.py::test_apk_metadata_source [32mPASSED[0m[31m           [ 39%][0m
+tests/comparators/test_apk.py::test_skip_undecoded_android_manifest [32mPASSED[0m[31m [ 39%][0m
+tests/comparators/test_apk.py::test_no_android_manifest [32mPASSED[0m[31m           [ 39%][0m
+tests/comparators/test_archive.py::test_compressed_content_name [32mPASSED[0m[31m   [ 39%][0m
+tests/comparators/test_arsc.py::test_identification [32mPASSED[0m[31m               [ 40%][0m
+tests/comparators/test_arsc.py::test_no_differences [32mPASSED[0m[31m               [ 40%][0m
+tests/comparators/test_arsc.py::test_differences [33mSKIPPED[0m (requires aapt2)[31m [ 40%][0m
+tests/comparators/test_arsc.py::test_compare_non_existing [33mSKIPPED[0m (requires aapt2)[31m [ 40%][0m
+tests/comparators/test_berkeley_db.py::test_identification [32mPASSED[0m[31m        [ 40%][0m
+tests/comparators/test_berkeley_db.py::test_no_differences [32mPASSED[0m[31m        [ 40%][0m
+tests/comparators/test_berkeley_db.py::test_diff [32mPASSED[0m[31m                  [ 40%][0m
+tests/comparators/test_berkeley_db.py::test_diff6 [33mSKIPPED[0m ( >= 6.0 (5.3.28 detected))[31m [ 40%][0m
+tests/comparators/test_berkeley_db.py::test_compare_non_existing [32mPASSED[0m[31m  [ 41%][0m
+tests/comparators/test_binary.py::test_same_content [32mPASSED[0m[31m               [ 41%][0m
+tests/comparators/test_binary.py::test_not_same_content [32mPASSED[0m[31m           [ 41%][0m
+tests/comparators/test_binary.py::test_guess_file_type [32mPASSED[0m[31m            [ 41%][0m
+tests/comparators/test_binary.py::test_guess_encoding_binary [32mPASSED[0m[31m      [ 41%][0m
+tests/comparators/test_binary.py::test_guess_encoding_ascii [32mPASSED[0m[31m       [ 41%][0m
+tests/comparators/test_binary.py::test_guess_encoding_unicode [32mPASSED[0m[31m     [ 41%][0m
+tests/comparators/test_binary.py::test_guess_encoding_iso8859 [32mPASSED[0m[31m     [ 42%][0m
+tests/comparators/test_binary.py::test_no_differences_with_xxd [32mPASSED[0m[31m    [ 42%][0m
+tests/comparators/test_binary.py::test_compare_with_xxd [32mPASSED[0m[31m           [ 42%][0m
+tests/comparators/test_binary.py::test_compare_non_existing_with_xxd [32mPASSED[0m[31m [ 42%][0m
+tests/comparators/test_binary.py::test_no_differences_without_xxd [32mPASSED[0m[31m [ 42%][0m
+tests/comparators/test_binary.py::test_compare_without_xxd [32mPASSED[0m[31m        [ 42%][0m
+tests/comparators/test_binary.py::test_with_compare_details [32mPASSED[0m[31m       [ 42%][0m
+tests/comparators/test_binary.py::test_with_compare_details_and_fallback [32mPASSED[0m[31m [ 43%][0m
+tests/comparators/test_binary.py::test_with_compare_details_and_no_actual_differences [32mPASSED[0m[31m [ 43%][0m
+tests/comparators/test_binary.py::test_with_compare_details_and_failed_process [32mPASSED[0m[31m [ 43%][0m
+tests/comparators/test_binary.py::test_with_compare_details_and_parsing_error [32mPASSED[0m[31m [ 43%][0m
+tests/comparators/test_binary.py::test_with_compare_details_and_extraction_error [32mPASSED[0m[31m [ 43%][0m
+tests/comparators/test_binary.py::test_with_compare_details_and_tool_not_found [33mSKIPPED[0m (requires distro Python module)[31m [ 43%][0m
+tests/comparators/test_binary.py::test_compare_two_nonexisting_files [32mPASSED[0m[31m [ 43%][0m
+tests/comparators/test_binary.py::test_symlink_to_dir [32mPASSED[0m[31m             [ 44%][0m
+tests/comparators/test_binwalk.py::test_identification [32mPASSED[0m[31m            [ 44%][0m
+tests/comparators/test_binwalk.py::test_no_differences [32mPASSED[0m[31m            [ 44%][0m
+tests/comparators/test_binwalk.py::test_listing [32mPASSED[0m[31m                   [ 44%][0m
+tests/comparators/test_binwalk.py::test_symlink [32mPASSED[0m[31m                   [ 44%][0m
+tests/comparators/test_binwalk.py::test_compare_non_existing [32mPASSED[0m[31m      [ 44%][0m
+tests/comparators/test_bzip2.py::test_identification [32mPASSED[0m[31m              [ 44%][0m
+tests/comparators/test_bzip2.py::test_no_differences [32mPASSED[0m[31m              [ 45%][0m
+tests/comparators/test_bzip2.py::test_content_source [32mPASSED[0m[31m              [ 45%][0m
+tests/comparators/test_bzip2.py::test_content_source_without_extension [32mPASSED[0m[31m [ 45%][0m
+tests/comparators/test_bzip2.py::test_content_diff [32mPASSED[0m[31m                [ 45%][0m
+tests/comparators/test_bzip2.py::test_compare_non_existing [32mPASSED[0m[31m        [ 45%][0m
+tests/comparators/test_cbfs.py::test_identification_using_offset [32mPASSED[0m[31m  [ 45%][0m
+tests/comparators/test_cbfs.py::test_identification_without_offset [32mPASSED[0m[31m [ 45%][0m
+tests/comparators/test_cbfs.py::test_no_differences [32mPASSED[0m[31m               [ 46%][0m
+tests/comparators/test_cbfs.py::test_listing [32mPASSED[0m[31m                      [ 46%][0m
+tests/comparators/test_cbfs.py::test_content [32mPASSED[0m[31m                      [ 46%][0m
+tests/comparators/test_cbfs.py::test_compare_non_existing [32mPASSED[0m[31m         [ 46%][0m
+tests/comparators/test_containers.py::test_equal [32mPASSED[0m[31m                  [ 46%][0m
+tests/comparators/test_containers.py::test_different [32mPASSED[0m[31m              [ 46%][0m
+tests/comparators/test_cpio.py::test_identification [32mPASSED[0m[31m               [ 46%][0m
+tests/comparators/test_cpio.py::test_no_differences [32mPASSED[0m[31m               [ 47%][0m
+tests/comparators/test_cpio.py::test_listing [32mPASSED[0m[31m                      [ 47%][0m
+tests/comparators/test_cpio.py::test_symlink [32mPASSED[0m[31m                      [ 47%][0m
+tests/comparators/test_cpio.py::test_compressed_files [32mPASSED[0m[31m             [ 47%][0m
+tests/comparators/test_cpio.py::test_compare_non_existing [32mPASSED[0m[31m         [ 47%][0m
+tests/comparators/test_deb.py::test_identification [32mPASSED[0m[31m                [ 47%][0m
+tests/comparators/test_deb.py::test_no_differences [32mPASSED[0m[31m                [ 47%][0m
+tests/comparators/test_deb.py::test_metadata [32mPASSED[0m[31m                      [ 48%][0m
+tests/comparators/test_deb.py::test_compressed_files [32mPASSED[0m[31m              [ 48%][0m
+tests/comparators/test_deb.py::test_identification_of_md5sums_outside_deb [32mPASSED[0m[31m [ 48%][0m
+tests/comparators/test_deb.py::test_identification_of_md5sums_in_deb [32mPASSED[0m[31m [ 48%][0m
+tests/comparators/test_deb.py::test_md5sums [32mPASSED[0m[31m                       [ 48%][0m
+tests/comparators/test_deb.py::test_identical_files_in_md5sums [32mPASSED[0m[31m    [ 48%][0m
+tests/comparators/test_deb.py::test_identification_of_data_tar [32mPASSED[0m[31m    [ 48%][0m
+tests/comparators/test_deb.py::test_skip_comparison_of_known_identical_files [32mPASSED[0m[31m [ 49%][0m
+tests/comparators/test_deb.py::test_compare_non_existing [32mPASSED[0m[31m          [ 49%][0m
+tests/comparators/test_deb.py::test_compare_different_compression [32mPASSED[0m[31m [ 49%][0m
+tests/comparators/test_deb.py::test_uncompressed_data_tar [32mPASSED[0m[31m         [ 49%][0m
+tests/comparators/test_deb.py::test_uncompressed_control_tar [32mPASSED[0m[31m      [ 49%][0m
+tests/comparators/test_deb.py::test_compare_different_compression_multiple_files [32mPASSED[0m[31m [ 49%][0m
+tests/comparators/test_debian.py::test_dot_changes_identification [32mPASSED[0m[31m [ 49%][0m
+tests/comparators/test_debian.py::test_dot_changes_invalid [32mPASSED[0m[31m        [ 50%][0m
+tests/comparators/test_debian.py::test_dot_changes_no_differences [32mPASSED[0m[31m [ 50%][0m
+tests/comparators/test_debian.py::test_dot_changes_no_differences_exclude_buildinfo [32mPASSED[0m[31m [ 50%][0m
+tests/comparators/test_debian.py::test_dot_changes_identical_contents_and_different_files [32mPASSED[0m[31m [ 50%][0m
+tests/comparators/test_debian.py::test_dot_changes_different_contents_and_identical_files [32mPASSED[0m[31m [ 50%][0m
+tests/comparators/test_debian.py::test_dot_dsc_identification [32mPASSED[0m[31m     [ 50%][0m
+tests/comparators/test_debian.py::test_dot_dsc_no_associated_tar_gz [32mPASSED[0m[31m [ 50%][0m
+tests/comparators/test_debian.py::test_dot_dsc_no_differences [32mPASSED[0m[31m     [ 50%][0m
+tests/comparators/test_debian.py::test_dot_dsc_internal_diff [32mPASSED[0m[31m      [ 51%][0m
+tests/comparators/test_debian.py::test_dot_dsc_compare_non_existing [32mPASSED[0m[31m [ 51%][0m
+tests/comparators/test_debian.py::test_dot_buildinfo_identification [32mPASSED[0m[31m [ 51%][0m
+tests/comparators/test_debian.py::test_dot_buildinfo_no_deb [32mPASSED[0m[31m       [ 51%][0m
+tests/comparators/test_debian.py::test_dot_buildinfo_no_differences [32mPASSED[0m[31m [ 51%][0m
+tests/comparators/test_debian.py::test_dot_buildinfo_internal_diff [32mPASSED[0m[31m [ 51%][0m
+tests/comparators/test_debian.py::test_dot_buildinfo_compare_non_existing [32mPASSED[0m[31m [ 51%][0m
+tests/comparators/test_debian.py::test_fallback_comparisons [32mPASSED[0m[31m       [ 52%][0m
+tests/comparators/test_debian.py::test_unicode_identification [32mPASSED[0m[31m     [ 52%][0m
+tests/comparators/test_device.py::test_identification [32mPASSED[0m[31m             [ 52%][0m
+tests/comparators/test_device.py::test_diff [32mPASSED[0m[31m                       [ 52%][0m
+tests/comparators/test_device.py::test_diff_reverse [32mPASSED[0m[31m               [ 52%][0m
+tests/comparators/test_dex.py::test_identification [32mPASSED[0m[31m                [ 52%][0m
+tests/comparators/test_dex.py::test_no_differences [32mPASSED[0m[31m                [ 52%][0m
+tests/comparators/test_dex.py::test_differences [33mSKIPPED[0m (requires javap min 9.0.4 >= 14.0 (1.8.0_362 detected))[31m [ 53%][0m
+tests/comparators/test_dex.py::test_javap_14_differences [33mSKIPPED[0m ( >= 14.0 (1.8.0_362 detected))[31m [ 53%][0m
+tests/comparators/test_dex.py::test_compare_non_existing [33mXPASS[0m[31m           [ 53%][0m
+tests/comparators/test_directory.py::test_no_differences [32mPASSED[0m[31m          [ 53%][0m
+tests/comparators/test_directory.py::test_no_differences_with_extra_slash [32mPASSED[0m[31m [ 53%][0m
+tests/comparators/test_directory.py::test_content [32mPASSED[0m[31m                 [ 53%][0m
+tests/comparators/test_directory.py::test_stat [32mPASSED[0m[31m                    [ 53%][0m
+tests/comparators/test_directory.py::test_compare_to_file [32mPASSED[0m[31m         [ 54%][0m
+tests/comparators/test_directory.py::test_compare_to_device [32mPASSED[0m[31m       [ 54%][0m
+tests/comparators/test_directory.py::test_compare_to_symlink [32mPASSED[0m[31m      [ 54%][0m
+tests/comparators/test_directory.py::test_compare_to_dangling_symlink [32mPASSED[0m[31m [ 54%][0m
+tests/comparators/test_directory.py::test_compare_both_ways [32mPASSED[0m[31m       [ 54%][0m
+tests/comparators/test_docx.py::test_identification [32mPASSED[0m[31m               [ 54%][0m
+tests/comparators/test_docx.py::test_no_differences [32mPASSED[0m[31m               [ 54%][0m
+tests/comparators/test_docx.py::test_diff [33mSKIPPED[0m (requires docx2txt)[31m    [ 55%][0m
+tests/comparators/test_docx.py::test_compare_non_existing [33mSKIPPED[0m (requires docx2txt)[31m [ 55%][0m
+tests/comparators/test_dtb.py::test_identification [32mPASSED[0m[31m                [ 55%][0m
+tests/comparators/test_dtb.py::test_no_differences [32mPASSED[0m[31m                [ 55%][0m
+tests/comparators/test_dtb.py::test_diff [32mPASSED[0m[31m                          [ 55%][0m
+tests/comparators/test_dtb.py::test_compare_non_existing [32mPASSED[0m[31m          [ 55%][0m
+tests/comparators/test_elf.py::test_obj_identification [32mPASSED[0m[31m            [ 55%][0m
+tests/comparators/test_elf.py::test_obj_no_differences [32mPASSED[0m[31m            [ 56%][0m
+tests/comparators/test_elf.py::test_obj_compare_non_existing [32mPASSED[0m[31m      [ 56%][0m
+tests/comparators/test_elf.py::test_diff [32mPASSED[0m[31m                          [ 56%][0m
+tests/comparators/test_elf.py::test_lib_identification [32mPASSED[0m[31m            [ 56%][0m
+tests/comparators/test_elf.py::test_lib_no_differences [32mPASSED[0m[31m            [ 56%][0m
+tests/comparators/test_elf.py::test_lib_differences [32mPASSED[0m[31m               [ 56%][0m
+tests/comparators/test_elf.py::test_lib_compare_non_existing [32mPASSED[0m[31m      [ 56%][0m
+tests/comparators/test_elf.py::test_libmix_differences [32mPASSED[0m[31m            [ 57%][0m
+tests/comparators/test_elf.py::test_differences_with_dbgsym [32mPASSED[0m[31m       [ 57%][0m
+tests/comparators/test_elf.py::test_original_gnu_debuglink [32mPASSED[0m[31m        [ 57%][0m
+tests/comparators/test_elf.py::test_ignore_readelf_errors1_identify [32mPASSED[0m[31m [ 57%][0m
+tests/comparators/test_elf.py::test_ignore_readelf_errors2_identify [32mPASSED[0m[31m [ 57%][0m
+tests/comparators/test_elf.py::test_ignore_readelf_errors [32mPASSED[0m[31m         [ 57%][0m
+tests/comparators/test_elf_decompiler.py::test_obj_compare_non_existing [33mSKIPPED[0m (radare2 didn't recognize pdgj command)[31m [ 57%][0m
+tests/comparators/test_elf_decompiler.py::test_ghidra_diff [33mSKIPPED[0m (radare2 didn't recognize pdgj command)[31m [ 58%][0m
+tests/comparators/test_elf_decompiler.py::test_radare2_diff [33mSKIPPED[0m (requires r2pipe Python module)[31m [ 58%][0m
+tests/comparators/test_epub.py::test_identification [32mPASSED[0m[31m               [ 58%][0m
+tests/comparators/test_epub.py::test_no_differences [32mPASSED[0m[31m               [ 58%][0m
+tests/comparators/test_epub.py::test_differences [32mPASSED[0m[31m                  [ 58%][0m
+tests/comparators/test_epub.py::test_compare_non_existing [32mPASSED[0m[31m         [ 58%][0m
+tests/comparators/test_ffprobe.py::test_identification [32mPASSED[0m[31m            [ 58%][0m
+tests/comparators/test_ffprobe.py::test_no_differences [32mPASSED[0m[31m            [ 59%][0m
+tests/comparators/test_ffprobe.py::test_diff [32mPASSED[0m[31m                      [ 59%][0m
+tests/comparators/test_ffprobe.py::test_compare_non_existing [32mPASSED[0m[31m      [ 59%][0m
+tests/comparators/test_fit.py::test_identification [32mPASSED[0m[31m                [ 59%][0m
+tests/comparators/test_fit.py::test_no_differences [32mPASSED[0m[31m                [ 59%][0m
+tests/comparators/test_fit.py::test_file_differences [32mPASSED[0m[31m              [ 59%][0m
+tests/comparators/test_fit.py::test_nested_listing [32mPASSED[0m[31m                [ 59%][0m
+tests/comparators/test_fit.py::test_nested_symlink [32mPASSED[0m[31m                [ 60%][0m
+tests/comparators/test_fit.py::test_nested_compressed_files [32mPASSED[0m[31m       [ 60%][0m
+tests/comparators/test_fit.py::test_compare_non_existing [32mPASSED[0m[31m          [ 60%][0m
+tests/comparators/test_fontconfig.py::test_identification [32mPASSED[0m[31m         [ 60%][0m
+tests/comparators/test_fontconfig.py::test_no_differences [32mPASSED[0m[31m         [ 60%][0m
+tests/comparators/test_fontconfig.py::test_diff [32mPASSED[0m[31m                   [ 60%][0m
+tests/comparators/test_fonts.py::test_identification [32mPASSED[0m[31m              [ 60%][0m
+tests/comparators/test_fonts.py::test_no_differences [32mPASSED[0m[31m              [ 60%][0m
+tests/comparators/test_fonts.py::test_diff [32mPASSED[0m[31m                        [ 61%][0m
+tests/comparators/test_fonts.py::test_compare_non_existing [32mPASSED[0m[31m        [ 61%][0m
+tests/comparators/test_fsimage.py::test_identification [32mPASSED[0m[31m            [ 61%][0m
+tests/comparators/test_fsimage.py::test_identification_fat12 [32mPASSED[0m[31m      [ 61%][0m
+tests/comparators/test_fsimage.py::test_identification_fat16 [32mPASSED[0m[31m      [ 61%][0m
+tests/comparators/test_fsimage.py::test_identification_fat32 [32mPASSED[0m[31m      [ 61%][0m
+tests/comparators/test_fsimage.py::test_no_differences [33mSKIPPED[0m (guestfs not working on the system: RuntimeError('cannot find any suitable libguestfs supermin, fixed or old-style appliance on LIBGUESTFS_PATH (search path: /nix/store/aab3l2rqiy6gmhwqypkjb5hsck6rskbn-libguestfs-1.50.1/lib/guestfs)'))[31m [ 61%][0m
+tests/comparators/test_fsimage.py::test_differences [33mSKIPPED[0m (guestfs not working on the system: RuntimeError('cannot find any suitable libguestfs supermin, fixed or old-style appliance on LIBGUESTFS_PATH (search path: /nix/store/aab3l2rqiy6gmhwqypkjb5hsck6rskbn-libguestfs-1.50.1/lib/guestfs)'))[31m [ 62%][0m
+tests/comparators/test_fsimage.py::test_compare_non_existing [33mSKIPPED[0m (guestfs not working on the system: RuntimeError('cannot find any suitable libguestfs supermin, fixed or old-style appliance on LIBGUESTFS_PATH (search path: /nix/store/aab3l2rqiy6gmhwqypkjb5hsck6rskbn-libguestfs-1.50.1/lib/guestfs)'))[31m [ 62%][0m
+tests/comparators/test_fsimage.py::test_differences_fat [33mSKIPPED[0m (guestfs not working on the system: RuntimeError('cannot find any suitable libguestfs supermin, fixed or old-style appliance on LIBGUESTFS_PATH (search path: /nix/store/aab3l2rqiy6gmhwqypkjb5hsck6rskbn-libguestfs-1.50.1/lib/guestfs)'))[31m [ 62%][0m
+tests/comparators/test_gettext.py::test_identification [32mPASSED[0m[31m            [ 62%][0m
+tests/comparators/test_gettext.py::test_no_differences [32mPASSED[0m[31m            [ 62%][0m
+tests/comparators/test_gettext.py::test_diff [32mPASSED[0m[31m                      [ 62%][0m
+tests/comparators/test_gettext.py::test_charsets [32mPASSED[0m[31m                  [ 62%][0m
+tests/comparators/test_gettext.py::test_compare_non_existing [32mPASSED[0m[31m      [ 63%][0m
+tests/comparators/test_gif.py::test_identification [32mPASSED[0m[31m                [ 63%][0m
+tests/comparators/test_gif.py::test_no_differences [32mPASSED[0m[31m                [ 63%][0m
+tests/comparators/test_gif.py::test_diff [32mPASSED[0m[31m                          [ 63%][0m
+tests/comparators/test_gif.py::test_compare_non_existing [32mPASSED[0m[31m          [ 63%][0m
+tests/comparators/test_gif.py::test_has_visuals [32mPASSED[0m[31m                   [ 63%][0m
+tests/comparators/test_gif.py::test_no_visuals_different_size [32mPASSED[0m[31m     [ 63%][0m
+tests/comparators/test_git.py::test_identification [32mPASSED[0m[31m                [ 64%][0m
+tests/comparators/test_git.py::test_no_differences [32mPASSED[0m[31m                [ 64%][0m
+tests/comparators/test_git.py::test_diff [32mPASSED[0m[31m                          [ 64%][0m
+tests/comparators/test_gnumeric.py::test_identification [32mPASSED[0m[31m           [ 64%][0m
+tests/comparators/test_gnumeric.py::test_no_differences [32mPASSED[0m[31m           [ 64%][0m
+tests/comparators/test_gnumeric.py::test_diff [32mPASSED[0m[31m                     [ 64%][0m
+tests/comparators/test_gnumeric.py::test_compare_non_existing [32mPASSED[0m[31m     [ 64%][0m
+tests/comparators/test_gzip.py::test_identification [32mPASSED[0m[31m               [ 65%][0m
+tests/comparators/test_gzip.py::test_fallback_recognizes [32mPASSED[0m[31m          [ 65%][0m
+tests/comparators/test_gzip.py::test_no_differences [32mPASSED[0m[31m               [ 65%][0m
+tests/comparators/test_gzip.py::test_metadata [32mPASSED[0m[31m                     [ 65%][0m
+tests/comparators/test_gzip.py::test_content_source [32mPASSED[0m[31m               [ 65%][0m
+tests/comparators/test_gzip.py::test_content_source_without_extension [32mPASSED[0m[31m [ 65%][0m
+tests/comparators/test_gzip.py::test_content_diff [32mPASSED[0m[31m                 [ 65%][0m
+tests/comparators/test_gzip.py::test_compare_non_existing [32mPASSED[0m[31m         [ 66%][0m
+tests/comparators/test_haskell.py::test_identification [33mSKIPPED[0m (mismatch between system ghc and fixture)[31m [ 66%][0m
+tests/comparators/test_haskell.py::test_no_differences [32mPASSED[0m[31m            [ 66%][0m
+tests/comparators/test_haskell.py::test_diff [33mSKIPPED[0m (mismatch between system ghc and fixture)[31m [ 66%][0m
+tests/comparators/test_hdf.py::test_identification [32mPASSED[0m[31m                [ 66%][0m
+tests/comparators/test_hdf.py::test_no_differences [32mPASSED[0m[31m                [ 66%][0m
+tests/comparators/test_hdf.py::test_diff [32mPASSED[0m[31m                          [ 66%][0m
+tests/comparators/test_hdf.py::test_compare_non_existing [32mPASSED[0m[31m          [ 67%][0m
+tests/comparators/test_html.py::test_identification [32mPASSED[0m[31m               [ 67%][0m
+tests/comparators/test_html.py::test_no_differences [32mPASSED[0m[31m               [ 67%][0m
+tests/comparators/test_html.py::test_diff [32mPASSED[0m[31m                         [ 67%][0m
+tests/comparators/test_icc.py::test_identification [32mPASSED[0m[31m                [ 67%][0m
+tests/comparators/test_icc.py::test_no_differences [32mPASSED[0m[31m                [ 67%][0m
+tests/comparators/test_icc.py::test_diff [32mPASSED[0m[31m                          [ 67%][0m
+tests/comparators/test_icc.py::test_compare_non_existing [32mPASSED[0m[31m          [ 68%][0m
+tests/comparators/test_ico_image.py::test_identification [32mPASSED[0m[31m          [ 68%][0m
+tests/comparators/test_ico_image.py::test_no_differences [32mPASSED[0m[31m          [ 68%][0m
+tests/comparators/test_ico_image.py::test_diff [32mPASSED[0m[31m                    [ 68%][0m
+tests/comparators/test_ico_image.py::test_has_visuals [32mPASSED[0m[31m             [ 68%][0m
+tests/comparators/test_ipk.py::test_identification [32mPASSED[0m[31m                [ 68%][0m
+tests/comparators/test_ipk.py::test_no_differences [32mPASSED[0m[31m                [ 68%][0m
+tests/comparators/test_ipk.py::test_metadata [32mPASSED[0m[31m                      [ 69%][0m
+tests/comparators/test_ipk.py::test_compressed_files [32mPASSED[0m[31m              [ 69%][0m
+tests/comparators/test_ipk.py::test_compare_non_existing [32mPASSED[0m[31m          [ 69%][0m
+tests/comparators/test_iso9660.py::test_identification [32mPASSED[0m[31m            [ 69%][0m
+tests/comparators/test_iso9660.py::test_no_differences [32mPASSED[0m[31m            [ 69%][0m
+tests/comparators/test_iso9660.py::test_iso9660_content [32mPASSED[0m[31m           [ 69%][0m
+tests/comparators/test_iso9660.py::test_iso9660_rockridge [32mPASSED[0m[31m         [ 69%][0m
+tests/comparators/test_iso9660.py::test_symlink [32mPASSED[0m[31m                   [ 70%][0m
+tests/comparators/test_iso9660.py::test_compressed_files [32mPASSED[0m[31m          [ 70%][0m
+tests/comparators/test_iso9660.py::test_compare_non_existing [32mPASSED[0m[31m      [ 70%][0m
+tests/comparators/test_java.py::test_identification [32mPASSED[0m[31m               [ 70%][0m
+tests/comparators/test_java.py::test_no_differences [32mPASSED[0m[31m               [ 70%][0m
+tests/comparators/test_java.py::test_diff_procyon [32mPASSED[0m[31m                 [ 70%][0m
+tests/comparators/test_java.py::test_diff_javap [33mSKIPPED[0m (requires javap min 9.0.4 >= 14.0 (1.8.0_362 detected))[31m [ 70%][0m
+tests/comparators/test_java.py::test_diff_javap_14 [33mSKIPPED[0m ( >= 14.0 (1.8.0_362 detected))[31m [ 70%][0m
+tests/comparators/test_java.py::test_compare_non_existing_procyon [32mPASSED[0m[31m [ 71%][0m
+tests/comparators/test_java.py::test_compare_non_existing_javap [32mPASSED[0m[31m   [ 71%][0m
+tests/comparators/test_javascript.py::test_identification [32mPASSED[0m[31m         [ 71%][0m
+tests/comparators/test_javascript.py::test_no_differences [32mPASSED[0m[31m         [ 71%][0m
+tests/comparators/test_javascript.py::test_diff [32mPASSED[0m[31m                   [ 71%][0m
+tests/comparators/test_javascript.py::test_compare_non_existing [32mPASSED[0m[31m   [ 71%][0m
+tests/comparators/test_jpeg_image.py::test_identification [32mPASSED[0m[31m         [ 71%][0m
+tests/comparators/test_jpeg_image.py::test_no_differences [32mPASSED[0m[31m         [ 72%][0m
+tests/comparators/test_jpeg_image.py::test_diff [32mPASSED[0m[31m                   [ 72%][0m
+tests/comparators/test_jpeg_image.py::test_compare_non_existing [32mPASSED[0m[31m   [ 72%][0m
+tests/comparators/test_jpeg_image.py::test_has_visuals [32mPASSED[0m[31m            [ 72%][0m
+tests/comparators/test_json.py::test_identification [32mPASSED[0m[31m               [ 72%][0m
+tests/comparators/test_json.py::test_invalid [32mPASSED[0m[31m                      [ 72%][0m
+tests/comparators/test_json.py::test_no_differences [32mPASSED[0m[31m               [ 72%][0m
+tests/comparators/test_json.py::test_diff [32mPASSED[0m[31m                         [ 73%][0m
+tests/comparators/test_json.py::test_compare_non_existing [32mPASSED[0m[31m         [ 73%][0m
+tests/comparators/test_json.py::test_ordering_differences [32mPASSED[0m[31m         [ 73%][0m
+tests/comparators/test_kbx.py::test_identification [32mPASSED[0m[31m                [ 73%][0m
+tests/comparators/test_kbx.py::test_no_differences [32mPASSED[0m[31m                [ 73%][0m
+tests/comparators/test_kbx.py::test_diff [32mPASSED[0m[31m                          [ 73%][0m
+tests/comparators/test_kbx.py::test_compare_non_existing [32mPASSED[0m[31m          [ 73%][0m
+tests/comparators/test_lz4.py::test_identification [32mPASSED[0m[31m                [ 74%][0m
+tests/comparators/test_lz4.py::test_no_differences [32mPASSED[0m[31m                [ 74%][0m
+tests/comparators/test_lz4.py::test_content_source [32mPASSED[0m[31m                [ 74%][0m
+tests/comparators/test_lz4.py::test_content_source_without_extension [32mPASSED[0m[31m [ 74%][0m
+tests/comparators/test_lz4.py::test_content_diff [32mPASSED[0m[31m                  [ 74%][0m
+tests/comparators/test_lz4.py::test_compare_non_existing [32mPASSED[0m[31m          [ 74%][0m
+tests/comparators/test_lzip.py::test_identification [32mPASSED[0m[31m               [ 74%][0m
+tests/comparators/test_lzip.py::test_no_differences [32mPASSED[0m[31m               [ 75%][0m
+tests/comparators/test_lzip.py::test_content_source [32mPASSED[0m[31m               [ 75%][0m
+tests/comparators/test_lzip.py::test_content_source_without_extension [32mPASSED[0m[31m [ 75%][0m
+tests/comparators/test_lzip.py::test_content_diff [32mPASSED[0m[31m                 [ 75%][0m
+tests/comparators/test_lzip.py::test_compare_non_existing [32mPASSED[0m[31m         [ 75%][0m
+tests/comparators/test_macho.py::test_obj_identification [32mPASSED[0m[31m          [ 75%][0m
+tests/comparators/test_macho.py::test_obj_no_differences [32mPASSED[0m[31m          [ 75%][0m
+tests/comparators/test_macho.py::test_otool_obj_compare_non_existing [33mSKIPPED[0m (requires otool and lipo)[31m [ 76%][0m
+tests/comparators/test_macho.py::test_otool_diff [33mSKIPPED[0m (requires otool and lipo)[31m [ 76%][0m
+tests/comparators/test_macho.py::test_llvm_obj_compare_non_existing [32mPASSED[0m[31m [ 76%][0m
+tests/comparators/test_macho.py::test_llvm_diff [32mPASSED[0m[31m                   [ 76%][0m
+tests/comparators/test_macho_decompiler.py::test_obj_compare_non_existing [33mSKIPPED[0m (radare2 didn't recognize pdgj command)[31m [ 76%][0m
+tests/comparators/test_macho_decompiler.py::test_ghidra_diff [33mSKIPPED[0m (radare2 didn't recognize pdgj command)[31m [ 76%][0m
+tests/comparators/test_macho_decompiler.py::test_radare2_diff [33mSKIPPED[0m (requires r2pipe Python module)[31m [ 76%][0m
+tests/comparators/test_mono.py::test_identification [32mPASSED[0m[31m               [ 77%][0m
+tests/comparators/test_mono.py::test_no_differences [32mPASSED[0m[31m               [ 77%][0m
+tests/comparators/test_mono.py::test_diff [32mPASSED[0m[31m                         [ 77%][0m
+tests/comparators/test_mono.py::test_compare_non_existing [32mPASSED[0m[31m         [ 77%][0m
+tests/comparators/test_ocaml.py::test_identification [32mPASSED[0m[31m              [ 77%][0m
+tests/comparators/test_ocaml.py::test_no_differences [32mPASSED[0m[31m              [ 77%][0m
+tests/comparators/test_ocaml.py::test_diff [32mPASSED[0m[31m                        [ 77%][0m
+tests/comparators/test_ocaml.py::test_compare_non_existing [32mPASSED[0m[31m        [ 78%][0m
+tests/comparators/test_odt.py::test_identification [32mPASSED[0m[31m                [ 78%][0m
+tests/comparators/test_odt.py::test_no_differences [32mPASSED[0m[31m                [ 78%][0m
+tests/comparators/test_odt.py::test_diff [33mSKIPPED[0m ( >= 0.7 (0.5 detected))[31m [ 78%][0m
+tests/comparators/test_odt.py::test_compare_non_existing [33mSKIPPED[0m ( >= 0.7 (0.5 detected))[31m [ 78%][0m
+tests/comparators/test_ogg.py::test_identification [32mPASSED[0m[31m                [ 78%][0m
+tests/comparators/test_ogg.py::test_no_differences [32mPASSED[0m[31m                [ 78%][0m
+tests/comparators/test_ogg.py::test_diff [32mPASSED[0m[31m                          [ 79%][0m
+tests/comparators/test_ogg.py::test_compare_non_existing [32mPASSED[0m[31m          [ 79%][0m
+tests/comparators/test_openssh_pub_key.py::test_identification [32mPASSED[0m[31m    [ 79%][0m
+tests/comparators/test_openssh_pub_key.py::test_no_differences [32mPASSED[0m[31m    [ 79%][0m
+tests/comparators/test_openssh_pub_key.py::test_diff [32mPASSED[0m[31m              [ 79%][0m
+tests/comparators/test_openssh_pub_key.py::test_compare_non_existing [32mPASSED[0m[31m [ 79%][0m
+tests/comparators/test_openssl.py::test_identification [32mPASSED[0m[31m            [ 79%][0m
+tests/comparators/test_openssl.py::test_no_differences [32mPASSED[0m[31m            [ 80%][0m
+tests/comparators/test_openssl.py::test_differences [32mPASSED[0m[31m               [ 80%][0m
+tests/comparators/test_pcap.py::test_identification [32mPASSED[0m[31m               [ 80%][0m
+tests/comparators/test_pcap.py::test_no_differences [32mPASSED[0m[31m               [ 80%][0m
+tests/comparators/test_pcap.py::test_diff [32mPASSED[0m[31m                         [ 80%][0m
+tests/comparators/test_pcap.py::test_compare_non_existing [32mPASSED[0m[31m         [ 80%][0m
+tests/comparators/test_pdf.py::test_identification [32mPASSED[0m[31m                [ 80%][0m
+tests/comparators/test_pdf.py::test_no_differences [32mPASSED[0m[31m                [ 80%][0m
+tests/comparators/test_pdf.py::test_differences_found_with_weird_encoding [32mPASSED[0m[31m [ 81%][0m
+tests/comparators/test_pdf.py::test_text_diff [32mPASSED[0m[31m                     [ 81%][0m
+tests/comparators/test_pdf.py::test_compare_non_existing [32mPASSED[0m[31m          [ 81%][0m
+tests/comparators/test_pdf.py::test_metadata [33mSKIPPED[0m (pypdf not installed or not version 3.x+)[31m [ 81%][0m
+tests/comparators/test_pdf.py::test_annotations [33mSKIPPED[0m (pypdf not installed or not version 3.x+)[31m [ 81%][0m
+tests/comparators/test_pgp.py::test_identification [32mPASSED[0m[31m                [ 81%][0m
+tests/comparators/test_pgp.py::test_no_differences [32mPASSED[0m[31m                [ 81%][0m
+tests/comparators/test_pgp.py::test_diff [32mPASSED[0m[31m                          [ 82%][0m
+tests/comparators/test_pgp.py::test_compare_non_existing [32mPASSED[0m[31m          [ 82%][0m
+tests/comparators/test_pgp.py::test_pgp_signature_identification [32mPASSED[0m[31m  [ 82%][0m
+tests/comparators/test_pgp.py::test_pgp_signature [32mPASSED[0m[31m                 [ 82%][0m
+tests/comparators/test_pgp.py::test_signed_identification [32mPASSED[0m[31m         [ 82%][0m
+tests/comparators/test_pgp.py::test_signed_diff [32mPASSED[0m[31m                   [ 82%][0m
+tests/comparators/test_png.py::test_identification [32mPASSED[0m[31m                [ 82%][0m
+tests/comparators/test_png.py::test_no_differences [32mPASSED[0m[31m                [ 83%][0m
+tests/comparators/test_png.py::test_diff [32mPASSED[0m[31m                          [ 83%][0m
+tests/comparators/test_png.py::test_compare_non_existing [32mPASSED[0m[31m          [ 83%][0m
+tests/comparators/test_png.py::test_has_visuals [32mPASSED[0m[31m                   [ 83%][0m
+tests/comparators/test_ppu.py::test_identification [32mPASSED[0m[31m                [ 83%][0m
+tests/comparators/test_ppu.py::test_no_differences [32mPASSED[0m[31m                [ 83%][0m
+tests/comparators/test_ppu.py::test_diff [32mPASSED[0m[31m                          [ 83%][0m
+tests/comparators/test_ppu.py::test_compare_non_existing [32mPASSED[0m[31m          [ 84%][0m
+tests/comparators/test_ps.py::test_identification [32mPASSED[0m[31m                 [ 84%][0m
+tests/comparators/test_ps.py::test_no_differences [32mPASSED[0m[31m                 [ 84%][0m
+tests/comparators/test_ps.py::test_internal_diff [32mPASSED[0m[31m                  [ 84%][0m
+tests/comparators/test_ps.py::test_text_diff [32mPASSED[0m[31m                      [ 84%][0m
+tests/comparators/test_ps.py::test_compare_non_existing [32mPASSED[0m[31m           [ 84%][0m
+tests/comparators/test_python.py::test_identification [32mPASSED[0m[31m             [ 84%][0m
+tests/comparators/test_python.py::test_no_differences [33mSKIPPED[0m (Unstable on 3.10+)[31m [ 85%][0m
+tests/comparators/test_python.py::test_diff [32mPASSED[0m[31m                       [ 85%][0m
+tests/comparators/test_python.py::test_compare_non_existing [32mPASSED[0m[31m       [ 85%][0m
+tests/comparators/test_rdata.py::test_identification [32mPASSED[0m[31m              [ 85%][0m
+tests/comparators/test_rdata.py::test_no_differences [32mPASSED[0m[31m              [ 85%][0m
+tests/comparators/test_rdata.py::test_num_items_rdb [32mPASSED[0m[31m               [ 85%][0m
+tests/comparators/test_rdata.py::test_item_rdb [32mPASSED[0m[31m                    [ 85%][0m
+tests/comparators/test_rdata.py::test_num_items_rdx [32mPASSED[0m[31m               [ 86%][0m
+tests/comparators/test_rdata.py::test_item_rdx [32mPASSED[0m[31m                    [ 86%][0m
+tests/comparators/test_rlib.py::test_identification [32mPASSED[0m[31m               [ 86%][0m
+tests/comparators/test_rlib.py::test_no_differences [32mPASSED[0m[31m               [ 86%][0m
+tests/comparators/test_rlib.py::test_num_items [32mPASSED[0m[31m                    [ 86%][0m
+tests/comparators/test_rlib.py::test_item0_armap [32mPASSED[0m[31m                  [ 86%][0m
+tests/comparators/test_rlib.py::test_item1_elf [32mPASSED[0m[31m                    [ 86%][0m
+tests/comparators/test_rlib.py::test_item2_rust_metadata_bin [32mPASSED[0m[31m      [ 87%][0m
+tests/comparators/test_rlib.py::test_compare_non_existing [32mPASSED[0m[31m         [ 87%][0m
+tests/comparators/test_rpm.py::test_identification [32mPASSED[0m[31m                [ 87%][0m
+tests/comparators/test_rpm.py::test_no_differences [32mPASSED[0m[31m                [ 87%][0m
+tests/comparators/test_rpm.py::test_header [32mPASSED[0m[31m                        [ 87%][0m
+tests/comparators/test_rpm.py::test_listing [32mPASSED[0m[31m                       [ 87%][0m
+tests/comparators/test_rpm.py::test_content [32mPASSED[0m[31m                       [ 87%][0m
+tests/comparators/test_rpm.py::test_compare_non_existing [32mPASSED[0m[31m          [ 88%][0m
+tests/comparators/test_rpm.py::test_fallback_comparison [32mPASSED[0m[31m           [ 88%][0m
+tests/comparators/test_sockets.py::test_sockets [32mPASSED[0m[31m                   [ 88%][0m
+tests/comparators/test_sphinx.py::test_identification [32mPASSED[0m[31m             [ 88%][0m
+tests/comparators/test_sphinx.py::test_no_differences [32mPASSED[0m[31m             [ 88%][0m
+tests/comparators/test_sphinx.py::test_diff [32mPASSED[0m[31m                       [ 88%][0m
+tests/comparators/test_sqlite.py::test_identification [32mPASSED[0m[31m             [ 88%][0m
+tests/comparators/test_sqlite.py::test_no_differences [32mPASSED[0m[31m             [ 89%][0m
+tests/comparators/test_sqlite.py::test_diff [32mPASSED[0m[31m                       [ 89%][0m
+tests/comparators/test_sqlite.py::test_compare_non_existing [32mPASSED[0m[31m       [ 89%][0m
+tests/comparators/test_squashfs.py::test_identification [32mPASSED[0m[31m           [ 89%][0m
+tests/comparators/test_squashfs.py::test_no_differences [32mPASSED[0m[31m           [ 89%][0m
+tests/comparators/test_squashfs.py::test_no_warnings [32mPASSED[0m[31m              [ 89%][0m
+tests/comparators/test_squashfs.py::test_superblock [32mPASSED[0m[31m               [ 89%][0m
+tests/comparators/test_squashfs.py::test_symlink [32mPASSED[0m[31m                  [ 90%][0m
+tests/comparators/test_squashfs.py::test_compressed_files [32mPASSED[0m[31m         [ 90%][0m
+tests/comparators/test_squashfs.py::test_compare_non_existing [32mPASSED[0m[31m     [ 90%][0m
+tests/comparators/test_squashfs.py::test_symlink_root [32mPASSED[0m[31m             [ 90%][0m
+tests/comparators/test_symlink.py::test_destination [32mPASSED[0m[31m               [ 90%][0m
+tests/comparators/test_tar.py::test_identification [32mPASSED[0m[31m                [ 90%][0m
+tests/comparators/test_tar.py::test_no_differences [32mPASSED[0m[31m                [ 90%][0m
+tests/comparators/test_tar.py::test_listing [32mPASSED[0m[31m                       [ 90%][0m
+tests/comparators/test_tar.py::test_symlinks [32mPASSED[0m[31m                      [ 91%][0m
+tests/comparators/test_tar.py::test_text_file [32mPASSED[0m[31m                     [ 91%][0m
+tests/comparators/test_tar.py::test_compare_non_existing [32mPASSED[0m[31m          [ 91%][0m
+tests/comparators/test_tar.py::test_no_permissions_dir_in_tarball [32mPASSED[0m[31m [ 91%][0m
+tests/comparators/test_text.py::test_no_differences [32mPASSED[0m[31m               [ 91%][0m
+tests/comparators/test_text.py::test_difference_in_ascii [32mPASSED[0m[31m          [ 91%][0m
+tests/comparators/test_text.py::test_difference_in_unicode [32mPASSED[0m[31m        [ 91%][0m
+tests/comparators/test_text.py::test_difference_between_iso88591_and_unicode [32mPASSED[0m[31m [ 92%][0m
+tests/comparators/test_text.py::test_difference_between_iso88591_and_unicode_only [32mPASSED[0m[31m [ 92%][0m
+tests/comparators/test_text.py::test_compare_non_existing [32mPASSED[0m[31m         [ 92%][0m
+tests/comparators/test_text.py::test_ordering_differences [32mPASSED[0m[31m         [ 92%][0m
+tests/comparators/test_uimage.py::test_identification [32mPASSED[0m[31m             [ 92%][0m
+tests/comparators/test_uimage.py::test_no_differences [32mPASSED[0m[31m             [ 92%][0m
+tests/comparators/test_uimage.py::test_file_differences [32mPASSED[0m[31m           [ 92%][0m
+tests/comparators/test_uimage.py::test_nested_listing [32mPASSED[0m[31m             [ 93%][0m
+tests/comparators/test_uimage.py::test_nested_symlink [32mPASSED[0m[31m             [ 93%][0m
+tests/comparators/test_uimage.py::test_nested_compressed_files [32mPASSED[0m[31m    [ 93%][0m
+tests/comparators/test_uimage.py::test_compare_non_existing [32mPASSED[0m[31m       [ 93%][0m
+tests/comparators/test_utils.py::test_tools_missing [32mPASSED[0m[31m               [ 93%][0m
+tests/comparators/test_utils.py::test_skip_unless_tools_exist_empty [33mSKIPPED[0m[31m [ 93%][0m
+tests/comparators/test_utils.py::test_skip_unless_tools_exist_missing [33mSKIPPED[0m (requires /missing)[31m [ 93%][0m
+tests/comparators/test_utils.py::test_fuzzy_matching [32mPASSED[0m[31m              [ 94%][0m
+tests/comparators/test_utils.py::test_fuzzy_matching_only_once [32mPASSED[0m[31m    [ 94%][0m
+tests/comparators/test_utils.py::test_no_fuzzy_matching [32mPASSED[0m[31m           [ 94%][0m
+tests/comparators/test_utils.py::test_no_fuzzy_matching_new_file [32mPASSED[0m[31m  [ 94%][0m
+tests/comparators/test_utils.py::test_trim_stderr_in_command [32mPASSED[0m[31m      [ 94%][0m
+tests/comparators/test_wasm.py::test_identification [32mPASSED[0m[31m               [ 94%][0m
+tests/comparators/test_wasm.py::test_no_differences [32mPASSED[0m[31m               [ 94%][0m
+tests/comparators/test_wasm.py::test_diff [32mPASSED[0m[31m                         [ 95%][0m
+tests/comparators/test_wasm.py::test_compare_non_existing [32mPASSED[0m[31m         [ 95%][0m
+tests/comparators/test_xml.py::test_identification [32mPASSED[0m[31m                [ 95%][0m
+tests/comparators/test_xml.py::test_invalid [32mPASSED[0m[31m                       [ 95%][0m
+tests/comparators/test_xml.py::test_no_differences [32mPASSED[0m[31m                [ 95%][0m
+tests/comparators/test_xml.py::test_diff [32mPASSED[0m[31m                          [ 95%][0m
+tests/comparators/test_xml.py::test_ordering_differences [32mPASSED[0m[31m          [ 95%][0m
+tests/comparators/test_xsb.py::test_identification [32mPASSED[0m[31m                [ 96%][0m
+tests/comparators/test_xsb.py::test_no_differences [32mPASSED[0m[31m                [ 96%][0m
+tests/comparators/test_xsb.py::test_diff [32mPASSED[0m[31m                          [ 96%][0m
+tests/comparators/test_xsb.py::test_compare_non_existing [32mPASSED[0m[31m          [ 96%][0m
+tests/comparators/test_xz.py::test_identification [32mPASSED[0m[31m                 [ 96%][0m
+tests/comparators/test_xz.py::test_no_differences [32mPASSED[0m[31m                 [ 96%][0m
+tests/comparators/test_xz.py::test_content_source [32mPASSED[0m[31m                 [ 96%][0m
+tests/comparators/test_xz.py::test_content_source_without_extension [32mPASSED[0m[31m [ 97%][0m
+tests/comparators/test_xz.py::test_content_diff [32mPASSED[0m[31m                   [ 97%][0m
+tests/comparators/test_xz.py::test_compare_non_existing [32mPASSED[0m[31m           [ 97%][0m
+tests/comparators/test_zip.py::test_identification [32mPASSED[0m[31m                [ 97%][0m
+tests/comparators/test_zip.py::test_no_differences [32mPASSED[0m[31m                [ 97%][0m
+tests/comparators/test_zip.py::test_metadata [32mPASSED[0m[31m                      [ 97%][0m
+tests/comparators/test_zip.py::test_compressed_files [32mPASSED[0m[31m              [ 97%][0m
+tests/comparators/test_zip.py::test_extra_fields [32mPASSED[0m[31m                  [ 98%][0m
+tests/comparators/test_zip.py::test_compare_non_existing [32mPASSED[0m[31m          [ 98%][0m
+tests/comparators/test_zip.py::test_mozzip_identification [32mPASSED[0m[31m         [ 98%][0m
+tests/comparators/test_zip.py::test_mozzip_no_differences [32mPASSED[0m[31m         [ 98%][0m
+tests/comparators/test_zip.py::test_mozzip_metadata [32mPASSED[0m[31m               [ 98%][0m
+tests/comparators/test_zip.py::test_mozzip_compressed_files [32mPASSED[0m[31m       [ 98%][0m
+tests/comparators/test_zip.py::test_mozzip_compare_non_existing [32mPASSED[0m[31m   [ 98%][0m
+tests/comparators/test_zip.py::test_jmod_identification [32mPASSED[0m[31m           [ 99%][0m
+tests/comparators/test_zip.py::test_jmod_no_differences [32mPASSED[0m[31m           [ 99%][0m
+tests/comparators/test_zip.py::test_jmod_metadata [32mPASSED[0m[31m                 [ 99%][0m
+tests/comparators/test_zip.py::test_encrypted [32mPASSED[0m[31m                     [ 99%][0m
+tests/comparators/test_zip.py::test_commented [32mPASSED[0m[31m                     [ 99%][0m
+tests/comparators/test_zst.py::test_identification [32mPASSED[0m[31m                [ 99%][0m
+tests/comparators/test_zst.py::test_no_differences [32mPASSED[0m[31m                [ 99%][0m
+tests/comparators/test_zst.py::test_content_source [32mPASSED[0m[31m                [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m__________________________ test_non_unicode_filename ___________________________[0m
+
+capsys = <_pytest.capture.CaptureFixture object at 0x7fff283bfbb0>
+tmpdir = local('/build/pytest-of-nixbld/pytest-0/test_non_unicode_filename0')
+
+    [94mdef[39;49;00m [92mtest_non_unicode_filename[39;49;00m(capsys, tmpdir):[90m[39;49;00m
+        [90m# Bug reference: https://bugs.debian.org/898022[39;49;00m[90m[39;49;00m
+        path = [96mstr[39;49;00m(tmpdir.dirpath()).encode([33m"[39;49;00m[33mutf-8[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        a = os.path.join(path, [33mb[39;49;00m[33m"[39;49;00m[33m\xf0[39;49;00m[33m\x28[39;49;00m[33m\x8c[39;49;00m[33m\x28[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+        b = os.path.join(path, [33mb[39;49;00m[33m"[39;49;00m[33m\xf0[39;49;00m[33m\x28[39;49;00m[33m\x8c[39;49;00m[33m\x29[39;49;00m[33m"[39;49;00m)[90m[39;49;00m
+>       [94mwith[39;49;00m [96mopen[39;49;00m(a, [33m"[39;49;00m[33mw[39;49;00m[33m"[39;49;00m), [96mopen[39;49;00m(b, [33m"[39;49;00m[33mw[39;49;00m[33m"[39;49;00m):[90m[39;49;00m
+[1m[31mE       OSError: [Errno 84] Invalid or incomplete multibyte or wide character: b'/build/pytest-of-nixbld/pytest-0/\xf0(\x8c('[0m
+
+[1m[31mtests/test_main.py[0m:168: OSError
+[33m=============================== warnings summary ===============================[0m
+../../nix/store/4z0jvl5rzafwmf5rz5h12076c9ppiari-python3.10-PyPDF2-3.0.1/lib/python3.10/site-packages/PyPDF2/__init__.py:21
+  /nix/store/4z0jvl5rzafwmf5rz5h12076c9ppiari-python3.10-PyPDF2-3.0.1/lib/python3.10/site-packages/PyPDF2/__init__.py:21: DeprecationWarning: PyPDF2 is deprecated. Please move to the pypdf library instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m tests/test_main.py::[1mtest_non_unicode_filename[0m - OSError: [Errno 84] Invalid or incomplete multibyte or wide character: b'/b...
+[31m= [31m[1m1 failed[0m, [32m675 passed[0m, [33m32 skipped[0m, [33m5 deselected[0m, [33m1 xfailed[0m, [33m1 xpassed[0m, [33m1 warning[0m[31m in 545.97s (0:09:05)[0m[31m =[0m
+/nix/store/7aprjn0yf6p06krg4087sxvilfp4c8yy-stdenv-linux/setup: line 1596: pop_var_context: head of shell_variables not a function context

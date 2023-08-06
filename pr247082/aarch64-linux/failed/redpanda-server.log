@@ -1,0 +1,100 @@
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+unpacking sources
+unpacking source archive /nix/store/5bvssd7mlhgdzdpaqnshnxv6hbrwy6bp-source
+source root is source
+@nix { "action": "setPhase", "phase": "patchPhase" }
+patching sources
+applying patch /nix/store/b1v2wpsf8l7kx2n3p6rfzddpr4qdr259-redpanda.patch
+patching file cmake/main.cmake
+patching file cmake/testing.cmake
+Hunk #1 succeeded at 20 with fuzz 2 (offset -4 lines).
+patching file src/CMakeLists.txt
+patching file src/v/CMakeLists.txt
+Hunk #1 succeeded at 57 (offset -1 lines).
+Hunk #2 succeeded at 72 (offset -1 lines).
+patching script interpreter paths in ./src/v/rpc/rpc_compiler.py
+./src/v/rpc/rpc_compiler.py: interpreter directive changed from "#!/usr/bin/env python3" to "/nix/store/cxzaail65kd6jpq6ylhjyg8kxq7z64gc-python3-3.10.12-env/bin/python3"
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+configuring
+fixing cmake files...
+cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/share/doc/redpanda -DCMAKE_INSTALL_INFODIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/include -DCMAKE_INSTALL_SBINDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/yi2g6zn0cbdkqyjdkmwqsikncy2dlqcx-clang-wrapper-14.0.6/bin/strip -DCMAKE_RANLIB=/nix/store/yi2g6zn0cbdkqyjdkmwqsikncy2dlqcx-clang-wrapper-14.0.6/bin/ranlib -DCMAKE_AR=/nix/store/yi2g6zn0cbdkqyjdkmwqsikncy2dlqcx-clang-wrapper-14.0.6/bin/ar -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_INSTALL_PREFIX=/nix/store/l5zm5ngfz1bhdybbck1lij4rl9qz2nl4-redpanda-23.1.13 -DREDPANDA_DEPS_SKIP_BUILD=ON -DRP_ENABLE_TESTS=OFF -Wno-dev -DGIT_VER=23.1.13 -DGIT_CLEAN_DIRTY="" 
+-- The C compiler identification is Clang 14.0.6
+-- The CXX compiler identification is Clang 14.0.6
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/yi2g6zn0cbdkqyjdkmwqsikncy2dlqcx-clang-wrapper-14.0.6/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/yi2g6zn0cbdkqyjdkmwqsikncy2dlqcx-clang-wrapper-14.0.6/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /nix/store/10y2rcpc7nb7yigaknbnp7k6wfjwc7vx-pkg-config-wrapper-0.29.2/bin/pkg-config (found version "0.29.2") 
+-- Building with ccache: /nix/store/y9zrsgm5041mch2km7g6n9mgdzfyakmw-ccache-4.8.2/bin/ccache, CCACHE_DIR=/build/sccache-redpanda
+-- Checking for one of the modules 'valgrind'
+-- Found Valgrind: /nix/store/psc30dv1vm6lq4hxh2rf97liz5mh0xh2-valgrind-3.21.0-dev/include  
+-- RP_ENABLE_FIXTURE_TESTS=OFF
+-- RP_ENABLE_UNIT_TESTS=OFF
+-- RP_ENABLE_BENCHMARK_TESTS=OFF
+-- Found Boost: /nix/store/jxhim8i5y9z0rp071aq6c88j04da57lx-boost-1.75.0-dev/include (found suitable version "1.75.0", minimum required is "1.73.0")  
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found Boost: /nix/store/jxhim8i5y9z0rp071aq6c88j04da57lx-boost-1.75.0-dev/include (found suitable version "1.75.0", minimum required is "1.73.0") found components: filesystem program_options thread unit_test_framework chrono date_time atomic 
+-- Checking for module 'libcares'
+--   Found libcares, version 1.19.1
+-- Found c-ares: /nix/store/w8rr9r0wsacjghzakphfvvjcnmix6845-c-ares-1.19.1/lib/libcares.so (found suitable version "1.19.1", minimum required is "1.13") 
+-- Found cryptopp: /nix/store/j947kla021mr5p9sr3gigs3dqxip3m8i-crypto++-8.8.0/lib/libcryptopp.so (Required is at least version "5.6.5") 
+-- Could NOT find dpdk (missing: dpdk_PMD_VMXNET3_UIO_LIBRARY dpdk_PMD_I40E_LIBRARY dpdk_PMD_IXGBE_LIBRARY dpdk_PMD_E1000_LIBRARY dpdk_PMD_BNXT_LIBRARY dpdk_PMD_RING_LIBRARY dpdk_PMD_CXGBE_LIBRARY dpdk_PMD_ENA_LIBRARY dpdk_PMD_ENIC_LIBRARY dpdk_PMD_NFP_LIBRARY dpdk_PMD_QEDE_LIBRARY) 
+-- Checking for one of the modules 'liblz4'
+-- Found lz4: /nix/store/wly4c9qfj2417wrn1v1miq2hmva4ikvb-lz4-1.9.4/lib/liblz4.so (found suitable version "1.9.4", minimum required is "1.7.3") 
+-- Looking for LZ4_compress_default
+-- Looking for LZ4_compress_default - found
+-- Performing Test Concepts_FOUND
+-- Performing Test Concepts_FOUND - Failed
+-- Checking for one of the modules 'gnutls'
+-- Found GnuTLS: /nix/store/n4bm9nydym8yjmdgqaq0risd5wxfnffj-gnutls-3.8.0/lib/libgnutls.so (found suitable version "3.8.0", minimum required is "3.3.26") 
+-- Checking for one of the modules 'liburing'
+-- Performing Test HAVE_IOURING_FEATURES
+-- Performing Test HAVE_IOURING_FEATURES - Success
+-- Found LibUring: /nix/store/p65jm398rmmm4cqjwdcbpddw7i37kaxy-liburing-2.4/lib/liburing.so (Required is at least version "2.0") 
+-- Performing Test LinuxMembarrier_FOUND
+-- Performing Test LinuxMembarrier_FOUND - Success
+-- Performing Test Sanitizers_ADDRESS_FOUND
+-- Performing Test Sanitizers_ADDRESS_FOUND - Success
+-- Performing Test Sanitizers_UNDEFINED_BEHAVIOR_FOUND
+-- Performing Test Sanitizers_UNDEFINED_BEHAVIOR_FOUND - Success
+-- Performing Test Sanitizers_FIBER_SUPPORT
+-- Performing Test Sanitizers_FIBER_SUPPORT - Success
+-- Found Sanitizers: -fsanitize=address  
+-- Performing Test CxxSourceLocation_SUPPORTED
+-- Performing Test CxxSourceLocation_SUPPORTED - Success
+-- Performing Test StdAtomic_EXPLICIT_LINK
+-- Performing Test StdAtomic_EXPLICIT_LINK - Success
+-- Found StdAtomic: -latomic  
+-- Checking for one of the modules 'hwloc'
+-- Found hwloc: /nix/store/15iyr87da4smf89p8r4h69ia1hqsi9xv-hwloc-2.9.2-lib/lib/libhwloc.so (found suitable version "2.9.2", minimum required is "1.11.2") 
+-- Found lksctp-tools: /nix/store/crfy79vlpr7xr4hlwqfz96fr9irchbr1-lksctp-tools-1.0.17/lib/libsctp.so  
+-- Found numactl: /nix/store/vq9d2fcp6km3ahhzzf0lgzzppzh68zvr-numactl-2.0.16/lib/libnuma.so  
+-- Checking for one of the modules 'yaml-cpp'
+-- Found yaml-cpp: /nix/store/21g8ph4mgn3d6f0v7vqa9i359rmjpbv4-yaml-cpp-0.7.0/lib/libyaml-cpp.so (found suitable version "0.7.0", minimum required is "0.5.1") 
+-- Found Boost: /nix/store/jxhim8i5y9z0rp071aq6c88j04da57lx-boost-1.75.0-dev/include (found version "1.75.0") found components: iostreams unit_test_framework regex 
+-- Found xxHash: /nix/store/n5xdsa8w5b6cyzr65qnkk70kmf0187s9-xxHash-0.8.1/include (found version "") 
+-- Found Zstd: /nix/store/kwi4daslbxvzbmcq0845vhmzgsh69wjq-zstd-1.5.5/lib/libzstd.so (found version "1.5.5") 
+-- Found LZ4: /nix/store/wly4c9qfj2417wrn1v1miq2hmva4ikvb-lz4-1.9.4/lib/liblz4.so (found version "1.9.4") 
+-- Found ZLIB: /nix/store/bqh7g3bcp7jxbnaa4w9k1m2spmv9q8mq-zlib-1.2.13/lib/libz.so (found version "1.2.13")  
+-- Found Hdrhistogram: /nix/store/1905c9yjmjhdmghrqpinjgsghb4mb745-HdrHistogram_c-0.11.5/lib/libhdr_histogram_static.a  
+-- Found Roaring: /nix/store/bjv5n1ypl1vicpw97nnk5jkyl6yfpvdp-croaring-0.2.61/lib/libroaring.so (found version "") 
+-- Found Protobuf: /nix/store/5an90x213xpnn2hvgjhbpijjg8lb116v-protobuf-3.21.12/lib/libprotobuf.so (found version "3.21.12") 
+[31mCMake Error at /nix/store/7cfzd5iq7j8y63indvn79ni2r4h610qg-cmake-3.26.4/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find LibXml2 (missing: LIBXML2_LIBRARY LIBXML2_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /nix/store/7cfzd5iq7j8y63indvn79ni2r4h610qg-cmake-3.26.4/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+  /nix/store/7cfzd5iq7j8y63indvn79ni2r4h610qg-cmake-3.26.4/share/cmake-3.26/Modules/FindLibXml2.cmake:108 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  src/v/cloud_storage_clients/CMakeLists.txt:2 (find_package)
+
+[0m
+-- Configuring incomplete, errors occurred!
